@@ -49,8 +49,14 @@ li {
 .logo {
     font-size: 30px;
 }
+.gallery{
+    float: left;
+    width: 25%;
+    height:auto;
+    background: #ccc;
+    padding: 20px;
+}
 
-/*
 .footer {
     display: flex;
     align-items: center;
@@ -72,7 +78,7 @@ li {
     text-align: center;
 
 }
-
+/*
 .p_f {
     color: white;
     text-align: center;
