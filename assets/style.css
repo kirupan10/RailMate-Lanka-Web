@@ -42,6 +42,44 @@ li {
     font-weight: bold;
 }
 
+.menu3 {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid cadetblue;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    width: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 10px;
+    background-color: cadetblue;
+
+}
+
+.menu4 {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid cadetblue;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    width: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 5px;
+    background-color: cadetblue;
+
+}
+
+.nav-lin a {
+    color: black;
+}
+
 .menu li:hover {
     background-color: #4c9e9e;
     border-radius: 5px;
