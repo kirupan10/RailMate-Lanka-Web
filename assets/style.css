@@ -50,11 +50,11 @@ li {
     font-size: 30px;
 }
 .b_gallery{
-    float: left;
-    width: 20%;
-    height:auto;
-    background: #ccc;
-    padding: 20px;
+    display: flex;
+    width: auto;
+    height: 200px;
+    background: white;
+    padding: 10px;
 }
 
 .footer {

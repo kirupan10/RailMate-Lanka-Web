@@ -7,26 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
     <title>TRS</title>
-    
-    <style>
-.welcome-image {
-  background-image: url("i.jpeg");
-  background-color: #cccccc;
-  height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
 
-.welcome-text {
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
+    <style>
+        .welcome-image {
+            background-image: url("assets/1.jpeg");
+            background-color: #cccccc;
+            height: 175px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .welcome-text {
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(8, 3, 3);
+        }
+
+        .table-form {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: white;
+
+        }
+
+        td {
+            width: 150px;
+            padding: 10px
+        }
+        .form{
+            padding: 2px;
+            height: 260px;
+        }
+
     </style>
 </head>
 
@@ -45,50 +64,28 @@
         </ul>
     </nav>
 
-     <!-- welcome-text part -->
+    <!-- welcome-text part -->
     <div class="welcome-image">
         <div class="welcome-text">
-            <h1 style="font-size: 40px;"> Welcome to Srilanka Railways</h1>
-            <h4 style="text-align: left;">already have a account? <button>login</button>or<button>sign up</button></h4>
-            <button style="align-items: right;">Book Your Seat</button>
+            <h2> Welcome to </h2>
+            <h1 style="font-size: 70px;">Srilanka Railways</h1>
+            <br>
+            <button
+                style="padding: 10px 20px; font-size: 15px;text-align: center;cursor: pointer; outline: auto; color: green;">Book
+                Your Seat</button>
         </div>
-            
+
     </div>
-
-     <!-- gallery menu -->
-    <div class="b_gallery">
-    <marquee  behavior="scroll" direction="left">         
-            <img src= 
-             "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"alt="GeeksforGeeks logo"> 
-            <img src= 
-            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
-            <img src= 
-            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"> 
-            <img src= 
-            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
-            <img src= 
-            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"> 
-    </marquee>
-
-      <br>
-
-    <marquee  behavior="scroll" direction="right">         
-        <img src= 
-            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"alt="GeeksforGeeks logo"> 
-        <img src= 
-            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"alt="GeeksforGeeks logo"> 
-        <img src= 
-            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
-        <img src= 
-            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">  
-    </marquee>
- 
-    </div>
-
-     <!-- form division -->
+    <!-- form division -->
     <div class="form">
-        <h2 align="center">Book Your Seats</h2>
-        <table >
+
+        <table class="table-form">
+            <tr>
+                <td colspan="2">
+                    <h2 align="center">Book Your Seats</h2>
+                </td>
+
+            </tr>
             <tr>
                 <td for="from">
                     From:
@@ -124,12 +121,37 @@
             <tr>
                 <td></td>
                 <td>
-                    <button type="submit">Search Trains</button>
+                    <button type="submit" style="padding: 7px 15px; font-size: 12px;text-align: center;cursor: pointer; outline: auto; color:grey;">Search Trains</button>
                 </td>
             </tr>
 
         </table>
     </div>
+    <!-- gallery menu -->
+    <div class="b_gallery">
+        <marquee behavior="scroll" direction="left">
+            <img src="assets/2.jpeg" height="200px">
+            <img src="assets/9.jpg" height="200px">
+            <img src="assets/8.jpeg" height="200px">
+            <img src="assets/3.jpeg" height="200px">
+            <img src="assets/4.jpg" height="200px">
+            <img src="assets/6.jpg" height="200px">
+            <img src="assets/7.jpg" height="200px">
+            <img src="assets/8.jpg" height="200px">
+            <img src="assets/6.avif" height="200px">
+            <img src="assets/2.jpeg" height="200px">
+            <img src="assets/9.jpg" height="200px">
+            <img src="assets/8.jpeg" height="200px">
+            <img src="assets/3.jpeg" height="200px">
+            <img src="assets/4.jpg" height="200px">
+            <img src="assets/6.jpg" height="200px">
+            <img src="assets/7.jpg" height="200px">
+            <img src="assets/8.jpg" height="200px">
+            <img src="assets/6.avif" height="200px">
+        </marquee>
+
+    </div>
+
     <div class="footer">
 
     </div>
