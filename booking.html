@@ -7,6 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
     <title>TRS</title>
+    
+    <style>
+.welcome-image {
+  background-image: url("i.jpeg");
+  background-color: #cccccc;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.welcome-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+    </style>
 </head>
 
 <body>
@@ -23,15 +44,51 @@
             </div>
         </ul>
     </nav>
-    <div class="welcome">
-           <h1> Welcome to Srilanka Railways</h1>
+
+     <!-- welcome-text part -->
+    <div class="welcome-image">
+        <div class="welcome-text">
+            <h1 style="font-size: 40px;"> Welcome to Srilanka Railways</h1>
+            <h4 style="text-align: left;">already have a account? <button>login</button>or<button>sign up</button></h4>
+            <button style="align-items: right;">Book Your Seat</button>
+        </div>
+            
     </div>
-    <div class="gallery">
-        GALLERY
+
+     <!-- gallery menu -->
+    <div class="b_gallery">
+    <marquee  behavior="scroll" direction="left">         
+            <img src= 
+             "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"alt="GeeksforGeeks logo"> 
+            <img src= 
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+            <img src= 
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"> 
+            <img src= 
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+            <img src= 
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"> 
+    </marquee>
+
+      <br>
+
+    <marquee  behavior="scroll" direction="right">         
+        <img src= 
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"alt="GeeksforGeeks logo"> 
+        <img src= 
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"alt="GeeksforGeeks logo"> 
+        <img src= 
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">
+        <img src= 
+            "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png">  
+    </marquee>
+ 
     </div>
+
+     <!-- form division -->
     <div class="form">
-        <h2>Book Your Seats</h2>
-        <table>
+        <h2 align="center">Book Your Seats</h2>
+        <table >
             <tr>
                 <td for="from">
                     From:
@@ -65,7 +122,7 @@
                 </td>
             </tr>
             <tr>
-
+                <td></td>
                 <td>
                     <button type="submit">Search Trains</button>
                 </td>
