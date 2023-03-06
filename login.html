@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <link rel="stylesheet" href="assets/style/footer.css">
 
 
     <style>
@@ -22,7 +24,7 @@
             padding: 90px 70px 50px 70px;
             background: rgba(14, 14, 13, 0.548);
             text-align: center;
-            font-size:22px;
+            font-size: 22px;
 
 
 
@@ -31,130 +33,145 @@
         .heading-section {
 
             text-align: center;
-            color: hsla(348, 83%, 47%, 0.5);
+            color: #db143c80;
 
 
 
         }
-        .form-control{
+
+        .form-control {
             width: 300px;
             height: 40px;
             font-size: medium;
             border-radius: 10ic;
             text-align: center;
             margin: 10px;
-            background-color: rgba(222, 163, 163, 0.336); /* 0.5 is the opacity level */
+            background-color: rgba(222, 163, 163, 0.336);
+            /* 0.5 is the opacity level */
             border: none;
             ;
         }
-        
+
+        .signin {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #db143c80;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .signin:hover {
+            background-color: #8e7d3e;
+        }
     </style>
 </head>
+
 <body>
     <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>TRS</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/style.css" />
+        <title>TRS</title>
+    </head>
 
-<body>
-    <!-- MANUBAR START-->
-    <nav class="navbar">
-        <div class="logo">TRS</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a> </li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
-    <!-- MANUBAR END-->
-
-    <!-- CONTENT START-->
-
-    <body class="bodystyle" style="background-image: url(assets/bgpic.jpg);">
-        <section class="ftco-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    
+    <body>
+        <!-- MANUBAR START-->
+        <nav class="navbar">
+            <div class="logo">TRS</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <div class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a> </li>
+                    <li><a href="/">Pricing</a></li>
+                    <li><a href="/">Contact</a></li>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="login-wrap">
-                            <h2 class="heading-section">Login</h2><br>
-                            <h3 class="mb-4 rtext-cente">Have an account?</h3>
-                            <form action="#" class="signin-form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Username" required>
-                                </div>
-                                <div class="form-group">
-                                    <input id="password-field" type="password" class="form-control"
-                                        placeholder="Password" required>
-                                    <span toggle="#password-field"
-                                        class="toggle-password"></span>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="signin">Sign
-                                        In</button>
-                                </div>
-                                <div class="form-group d-md-flex">
-                                    <div class="w-50">
+            </ul>
+        </nav>
+        <!-- MANUBAR END-->
 
-                                        <div class="w-50 text-md-right">
-                                            <a href="#" style="color: #fff">Forgot Password</a>
+        <!-- CONTENT START-->
+
+        <body class="bodystyle" style="background-image: url(assets/bgpic.jpg);">
+            <section class="ftco-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="login-wrap">
+                                <h2 class="heading-section">Login</h2><br>
+                                <h3 class="mb-4 rtext-cente">Have an account?</h3>
+                                <form action="#" class="signin-form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Username" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="password-field" type="password" class="form-control"
+                                            placeholder="Password" required>
+                                        <span toggle="#password-field" class="toggle-password"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="signin">Sign
+                                            In</button>
+                                    </div>
+                                    <div class="form-group d-md-flex">
+                                        <div class="w-50">
+
+                                            <div class="w-50 text-md-right">
+                                                <a href="#" style="color: #fff">Forgot Password</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
 
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-    </body>
+        </body>
 
-    <!-- CONTENT END-->
+        <!-- CONTENT END-->
 
-    <!-- FOOTER START-->
-    <footer>
+        <!-- FOOTER START-->
         <footer>
             <div class="content">
                 <div class="left box">
                     <div class="upper">
                         <div class="topic">About us</div>
-                        <p>CodingLab is a channel where you can learn HTML,
-                            CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+                        <p>Train booking systems are automated systems that allow customers to securely purchase tickets
+                            for a variety of train services online. </p>
                     </div>
                     <div class="lower">
                         <div class="topic">Contact us</div>
                         <div class="phone">
-                            <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+                            <a href="#"><i class="fas fa-phone-volume"></i>+94 770 221 046</a>
                         </div>
                         <div class="email">
-                            <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                            <a href="#"><i class="fas fa-envelope"></i>ikirupan@gmail.com</a>
                         </div>
                     </div>
                 </div>
                 <div class="middle box">
                     <div class="topic">Our Services</div>
-                    <div><a href="#">Web Design, Development</a></div>
-                    <div><a href="#">Web UX Design, Reasearch</a></div>
-                    <div><a href="#">Web User Interface Design</a></div>
-                    <div><a href="#">Theme Development, Design</a></div>
-                    <div><a href="#">Mobile Application Design</a></div>
-                    <div><a href="#">Wire raming & Prototyping</a></div>
+                    <div><a href="#">Online Train Reservation</a></div>
+                    <div><a href="#">Price Calculation</a></div>
+                    <div><a href="#">Train Avaiablity Check</a></div>
+                    <div><a href="#">News & Updates</a></div>
                 </div>
                 <div class="right box">
                     <div class="topic">Subscribe us</div>
@@ -165,14 +182,14 @@
                 </div>
             </div>
             <div class="bottom">
-                <p>Copyright &#169; 2020 <a href="#">CodingLab</a> All rights reserved</p>
+                <p>Copyright &#169; 2023 <a href="#">Kirupan Inpathas</a> All rights reserved</p>
             </div>
         </footer>
-    </footer>
-    <!-- FOOTER END-->
+        <!-- FOOTER END-->
 
+    </body>
+
+    </html>
 </body>
 
-</html>
-</body>
 </html>
