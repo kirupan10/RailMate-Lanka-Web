@@ -1,0 +1,34 @@
+        .alert {
+            padding: 10px;
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: black;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: red;
+        }
+
+        .alert a {
+            color: green;
+            font-weight: bold;
+        }
+
+        .badge {
+            background-color: red;
+            color: white;
+            padding: 4px 8px;
+            text-align: center;
+            border-radius: 5px;
+        }
