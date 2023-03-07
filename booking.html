@@ -8,20 +8,15 @@
     <link rel="stylesheet" href="assets/style.css" />
     <title>TRS</title>
     <style>
-<<<<<<< Updated upstream
         body {
-=======
-        body{
->>>>>>> Stashed changes
             background-image: url("assets/photographer.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
         }
-<<<<<<< Updated upstream
 
         .form {
-            width: 800px;
+            width: 700px;
         }
 
         .form-input {
@@ -56,13 +51,31 @@
         .booking-cta {
             float: right;
             padding: 20px;
-            width: 550px;
-            background-color:rgb(221, 212, 212);
+            width: 670px;
             height: 300px;
             margin-top: auto;
         }
-=======
->>>>>>> Stashed changes
+        .content-p{
+            background:rgb(221, 212, 212);
+            width: 400px;
+            height: 150px;
+        }
+        .submit-btn {
+            display: inline-block;
+            color: black;
+            background-color: rgb(221, 212, 212);
+            font-weight: 700;
+            padding: 14px 30px;
+            border-radius: 4px;
+            border: none;
+            -webkit-transition: 0.2s all;
+            transition: 0.2s all;
+        }
+        .form-td {
+            width: 150px;
+            text-align: center;
+            padding: 5px;
+        }
     </style>
 </head>
 
@@ -81,63 +94,55 @@
         </ul>
     </nav>
     <section class="form">
-<<<<<<< Updated upstream
         <br><br><br><br><br><br>
         <table class="form-table">
             <tr>
-                <td colspan="2" align="center">
+                <td colspan="2" align="center" class="form-td ">
                     <h2>BOOK YOUR SEATS</h2>
-=======
-        <table>
-            <tr>
-                <td colspan="2">
-                    <h2>book your seats</h2>
->>>>>>> Stashed changes
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="form-td ">
                     From:
                 </td>
-                <td>
-<<<<<<< Updated upstream
+                <td class="form-td ">
                     <input class="form-input" type="text" placeholder="Enter the city journy begin" required>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="form-td ">
                     To:
                 </td>
-                <td>
+                <td class="form-td ">
                     <input class="form-input" type="text" placeholder="Enter a destination" required>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="form-td ">
                     Date
                 </td>
-                <td>
+                <td class="form-td ">
                     <input class="form-input" type="date" required>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="form-td ">
                     No. of Passangers:
                 </td>
-                <td >
+                <td class="form-td ">
                     <div>
                         Adult: <input class="form-input-p" type="text">
                     </div>
                     <div>
                         Children: <input class="form-input-p" type="text">
                     </div>
-                </td>
+                </td> 
             </tr>
             <tr>
-                <td>
+                <td class="form-td ">
                    Travel class 
                 </td>
-                <td>
+                <td class="form-td ">
                     <select class="form-input" name="classes" id="tr-class">
                         <option value="1st-ac">First class(A/C)</option>
                         <option value="1st">First class</option>
@@ -146,11 +151,19 @@
                     </select>
                 </td> 
             </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button class="submit-btn">Check availability</button>
+                </td>
+            </tr>
         </table>
     </section>
     <div class="booking-cta">
-        <h1>Make your reservation</h1>
-        <p>Sri Lanka Railways,
+    
+            <h1 class="content-p">Make your reservation</h1>
+            <p class="content-p">
+            Sri Lanka Railways,
             the primary railway operator in Sri Lanka,
             provides seat reservations for its long-distance trains.
             With the option to reserve seats online through the Sri Lanka Railways website,
@@ -159,15 +172,8 @@
             including first class, second class,
             and third class. By reserving a seat in advance,
             passengers can avoid standing in crowded carriages and enjoy the scenic views from a reserved window seat.
-        </p>
+            </p>
     </div>
-=======
-                    <input class="form-input" type="text" placeholder="Enter a destination or hotel name">
-                </td>
-            </tr>
-        </table>
-    </section>
->>>>>>> Stashed changes
 </body>
 
 </html>
