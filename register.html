@@ -7,125 +7,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="assets/style/footer.css">
-
-
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="assets/style/notification.css">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/notify_bar.css">
 </head>
 
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="assets/style.css" />
-        <link rel="stylesheet" href="assets/style/login.css">
-        <title>TRS</title>
-    </head>
-
-    <body>
-        <!-- CONTENT START-->
-
-        <body class="bodystyle" style="background-image: url(assets/bgpic.jpg);">
-            <section class="ftco-section">
-                <div class="container">
-                    <div class="row justify-content-center">
-
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="login-wrap">
-                                <h2 class="heading-section">Login</h2><br>
-                                <h3 class="mb-4 rtext-cente">Have an account?</h3>
-                                <form action="#" class="signin-form">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Username" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Username" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Username" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Username" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input id="password-field" type="password" class="form-control"
-                                            placeholder="Password" required>
-                                        <span toggle="#password-field" class="toggle-password"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="signin">Login</button>
-                                    </div>
-                                    <div class="form-group d-md-flex">
-                                        <div class="w-50">
-
-                                            <div class="w-50 text-md-right">
-                                                <a href="#" style="color: #fff">Forgot Password</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
 
 
-                            </div>
-                        </div>
-                    </div>
+
+<body class="bodystyle">
+
+    <!-- Notification-Bar-Start-->
+    <div class="notification-top-bar">
+        <p>Don't you have an account?
+            <small>
+                <a href="login.html">Login</a>
+            </small>
+        </p>
+    </div>
+    <!-- Notification-Bar-End-->
+
+
+
+    <!-- CONTENT START-->
+    <div class="login-wrap">
+        <h2 class="heading-section">Fill for Register</h2><br>
+        <form action="#" class="signin-form">
+            <div class="form-group">
+                <input type="text" class="form-control-signup" placeholder="Username" required>
+                <hr>
+                <input type="password" class="form-control-signup" placeholder="Password" required>
+                <hr>
+                <input type="password" class="form-control-signup" placeholder="Conform Password" required>
+                <hr>
+                <input type="text" class="form-control-signup" placeholder="First name" required>
+                <hr>
+                <input type="text" class="form-control-signup" placeholder="Last name" required>
+                <hr>
+                <input type="date" class="form-control-signup" placeholder="Date of Birth" required>
+                <hr>
+                <select id="gender" name="gender" placeholder="Select gender" class="form-control-signup">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <hr>
+                <label for="terms" style="color: aliceblue; font-size: medium;"><a href=""> I agree to the terms and services:</a></label>
+                <input type="checkbox" id="terms" name="terms" required>
+
+            </div>
+            <div class="form-group">
+                <button type="submit" class="signin">Signup</button>
+            </div>
+
+        </form>
+    </div>
+    <!-- CONTENT END-->
+
+
+
+    <!-- FOOTER START-->
+    <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">About us</div>
+                    <p>Train booking systems are automated systems that allow customers to securely purchase tickets
+                        for a variety of train services online. </p>
                 </div>
-            </section>
-
-        </body>
-
-        <!-- CONTENT END-->
-
-        <!-- FOOTER START-->
-        <footer>
-            <div class="content">
-                <div class="left box">
-                    <div class="upper">
-                        <div class="topic">About us</div>
-                        <p>Train booking systems are automated systems that allow customers to securely purchase tickets
-                            for a variety of train services online. </p>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+94 770 221 046</a>
                     </div>
-                    <div class="lower">
-                        <div class="topic">Contact us</div>
-                        <div class="phone">
-                            <a href="#"><i class="fas fa-phone-volume"></i>+94 770 221 046</a>
-                        </div>
-                        <div class="email">
-                            <a href="#"><i class="fas fa-envelope"></i>ikirupan@gmail.com</a>
-                        </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>ikirupan@gmail.com</a>
                     </div>
-                </div>
-                <div class="middle box">
-                    <div class="topic">Our Services</div>
-                    <div><a href="#">Online Train Reservation</a></div>
-                    <div><a href="#">Price Calculation</a></div>
-                    <div><a href="#">Train Avaiablity Check</a></div>
-                    <div><a href="#">News & Updates</a></div>
-                </div>
-                <div class="right box">
-                    <div class="topic">Subscribe us</div>
-                    <form action="#">
-                        <input type="text" placeholder="Enter email address">
-                        <input type="submit" name="" value="Send">
-                    </form>
                 </div>
             </div>
-            <div class="bottom">
-                <p>Copyright &#169; 2023 <a href="#">Kirupan Inpathas</a> All rights reserved</p>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="#">Online Train Reservation</a></div>
+                <div><a href="#">Price Calculation</a></div>
+                <div><a href="#">Train Avaiablity Check</a></div>
+                <div><a href="#">News & Updates</a></div>
             </div>
-        </footer>
-        <!-- FOOTER END-->
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &#169; 2023 <a href="#">Kirupan Inpathas</a> All rights reserved</p>
+        </div>
+    </footer>
+    <!-- FOOTER END-->
 
-    </body>
 
-    </html>
 </body>
 
 </html>

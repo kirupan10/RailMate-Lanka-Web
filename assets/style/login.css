@@ -84,3 +84,17 @@
 .account{
     color: #fff;
 }
+
+.form-control-signup{
+    width: 300px;
+    height: 35px;
+    font-size: medium;
+    border-radius: 10ic;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(237, 234, 234, 0.67);
+    /* 0.5 is the opacity level */
+    border: none;
+   
+}
