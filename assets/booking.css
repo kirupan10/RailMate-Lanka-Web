@@ -55,14 +55,17 @@ body {
 }
 .submit-btn {
     display: inline-block;
+    width: 200px;
     color: black;
     background-color: rgb(221, 212, 212);
     font-weight: 700;
     padding: 14px 30px;
-    border-radius: 4px;
-    border: none;
+    border-radius: 9ic;
+    cursor: pointer;
+    border: black;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
+    padding: 5px ;
 }
 .form-td {
     width: 150px;
