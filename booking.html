@@ -34,6 +34,9 @@
             margin-top: auto;
             margin-bottom: auto;
             background-color: white;
+            border: black solid;
+            border-radius: 15%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
         }
 
@@ -42,9 +45,25 @@
             padding: 10px
         }
         .form{
+            background-color:white;
+            background-size: cover;
             padding: 2px;
-            height: 260px;
+            height: 285px;
         }
+        .notification-top-bar {
+        position: flex;
+        top: 0;
+        left: 0;
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        background: #1ABC9C;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 14px;
+    }
 
     </style>
 </head>
@@ -63,22 +82,30 @@
             </div>
         </ul>
     </nav>
+    <div class="notification-top-bar">
+        <p>Already have an account?
+            <small>
+                <a href="#">Login</a>
+                 or 
+                <a href="#">Register</a>
+            </small>
+        </p>
+    </div>
 
     <!-- welcome-text part -->
     <div class="welcome-image">
         <div class="welcome-text">
-            <h2> Welcome to </h2>
-            <h1 style="font-size: 70px;">Srilanka Railways</h1>
+            <h2> Take the Train;</h2>
+            <h1 style="font-size: 35px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">It's More Convenient and It's Better for Our Planet</h1>
             <br>
             <button
-                style="padding: 10px 20px; font-size: 15px;text-align: center;cursor: pointer; outline: auto; color: green;">Book
+                style="padding: 10px 20px; font-size: 15px;text-align: center;cursor: pointer; color: black;background-color: transparent;">Book
                 Your Seat</button>
         </div>
 
     </div>
     <!-- form division -->
     <div class="form">
-
         <table class="table-form">
             <tr>
                 <td colspan="2">
@@ -128,27 +155,14 @@
         </table>
     </div>
     <!-- gallery menu -->
-    <div class="b_gallery">
-        <marquee behavior="scroll" direction="left">
-            <img src="assets/2.jpeg" height="200px">
+    <div class="b_gallery" style="height: fit-content;">
+        <img src="assets/7.jpg" height="200px">
             <img src="assets/9.jpg" height="200px">
             <img src="assets/8.jpeg" height="200px">
             <img src="assets/3.jpeg" height="200px">
             <img src="assets/4.jpg" height="200px">
             <img src="assets/6.jpg" height="200px">
-            <img src="assets/7.jpg" height="200px">
-            <img src="assets/8.jpg" height="200px">
-            <img src="assets/6.avif" height="200px">
-            <img src="assets/2.jpeg" height="200px">
-            <img src="assets/9.jpg" height="200px">
-            <img src="assets/8.jpeg" height="200px">
-            <img src="assets/3.jpeg" height="200px">
-            <img src="assets/4.jpg" height="200px">
-            <img src="assets/6.jpg" height="200px">
-            <img src="assets/7.jpg" height="200px">
-            <img src="assets/8.jpg" height="200px">
-            <img src="assets/6.avif" height="200px">
-        </marquee>
+       
 
     </div>
 

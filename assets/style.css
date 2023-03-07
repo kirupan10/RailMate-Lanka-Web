@@ -52,7 +52,7 @@ li {
 .b_gallery{
     display: flex;
     width: auto;
-    height: 200px;
+    height: 100px;
     background: white;
     padding: 10px;
 }

@@ -1,72 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Book a ticket</title>
-	<LINK REL="STYLESHEET" HREF="STYLE.CSS">
-	<style type="text/css">
-		#booktkt	{
-			margin:auto;
-			margin-top: 50px;
-			width: 40%;
-			height: 60%;
-			padding: auto;
-			padding-top: 50px;
-			padding-left: 50px;
-			background-color: rgba(0,0,0,0.3);
-			border-radius: 25px;
-		}
-		html { 
-		  background: url(img/bg7.jpg) no-repeat center center fixed; 
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		}
-		#journeytext	{
-			color: white;
-			font-size: 28px;
-			font-family:"Comic Sans MS", cursive, sans-serif;
-		}
-		#trains	{
-			margin-left: 90px;
-			font-size: 15px;
-		}
-		#submit	{
-			margin-left: 150px;
-			margin-bottom: 40px;
-			margin-top: 30px
-		}
-	</style>
-	<script type="text/javascript">
-		function validate()	{
-			var trains=document.getElementById("trains");
-			if(trains.selectedIndex==0)
-			{
-				alert("Please select your train");
-				trains.focus();
-				return false;		
-			}
-		}
-	</script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>TRS</title>
+    <style>
+        .notification-top-bar {
+        position: flex;
+        top: 0;
+        left: 0;
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        background: #1ABC9C;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+    </style>
 </head>
+
 <body>
-	<?php
-		include ('header.php');
-	?>
-	<div id="booktkt">
-	<h1 align="center" id="journeytext">Choose your journey</h1><br/><br/>
-	<form method="post" name="journeyform" onsubmit="return validate()">
-		<select id="trains" name="trains" required>
-			<option selected disabled>-------------------Select trains here----------------------</option>
-			<option value="rajdhani" >Rajdhani Express - Mumbai Central to Delhi</option>
-			<option value="duronto" >Duronto Express - Mumbai Central to Ernakulum</option>
-			<option value="geetanjali">Geetanjali Express - CST to Kolkata</option>
-			<option value="garibrath" >Garib Rath - Udaipur to Jammu Tawi</option>
-			<option value="mysoreexp" >Mysore Express - Talguppa to Mysore Jn</option>
-		</select>
-		<br/><br/>
-		<input type="submit" name="submit" id="submit" class="button" />
-	</form>
-	</div>
-	</body>
-	</html>
+    <nav class="navbar">
+        <div class="logo">TRS</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a> </li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="notification-top-bar">
+        <p>Already have an account?
+            <small>
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </small>
+        </p>
+    </div>
+
+</body>
+
+</html>
