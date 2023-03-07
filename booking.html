@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>TRS</title>
+    <style>
+        body {
+            background-image: url("assets/photographer.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .form {
+            width: 800px;
+        }
+
+        .form-input {
+            width: 300px;
+            height: 35px;
+            font-size: medium;
+            border-radius: 10ic;
+            text-align: center;
+            margin: 10px;
+            background-color: rgb(221, 212, 212);
+            border: none;
+        }
+        .form-input-p {
+            width: 100px;
+            height: 25px;
+            font-size: medium;
+            border-radius: 10ic;
+            text-align: center;
+            margin: 10px;
+            background-color: rgb(221, 212, 212);
+            border: none;
+        }
+
+        .form-table {
+            background-color: white;
+            align-content: center;
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .booking-cta {
+            float: right;
+            padding: 20px;
+            width: 550px;
+            background-color:rgb(221, 212, 212);
+            height: 300px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">TRS</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a> </li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <section class="form">
+        <br><br><br><br><br><br>
+        <table class="form-table">
+            <tr>
+                <td colspan="2" align="center">
+                    <h2>BOOK YOUR SEATS</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    From:
+                </td>
+                <td>
+                    <input class="form-input" type="text" placeholder="Enter the city journy begin" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    To:
+                </td>
+                <td>
+                    <input class="form-input" type="text" placeholder="Enter a destination" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date
+                </td>
+                <td>
+                    <input class="form-input" type="date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    No. of Passangers:
+                </td>
+                <td >
+                    <div>
+                        Adult: <input class="form-input-p" type="text">
+                    </div>
+                    <div>
+                        Children: <input class="form-input-p" type="text">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Travel class 
+                </td>
+                <td>
+                    <select class="form-input" name="classes" id="tr-class">
+                        <option value="1st-ac">First class(A/C)</option>
+                        <option value="1st">First class</option>
+                        <option value="2nd">Second class</option>
+                        <option value="3rd">Third class(A/C)</option>
+                    </select>
+                </td> 
+            </tr>
+        </table>
+    </section>
+    <div class="booking-cta">
+        <h1>Make your reservation</h1>
+        <p>Sri Lanka Railways,
+            the primary railway operator in Sri Lanka,
+            provides seat reservations for its long-distance trains.
+            With the option to reserve seats online through the Sri Lanka Railways website,
+            passengers can secure a comfortable and hassle-free journey. Sri Lanka Railways offers seat reservations for
+            different classes of travel,
+            including first class, second class,
+            and third class. By reserving a seat in advance,
+            passengers can avoid standing in crowded carriages and enjoy the scenic views from a reserved window seat.
+        </p>
+    </div>
+</body>
+
+</html>
