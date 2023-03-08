@@ -2,40 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/notification.css">
     <link rel="stylesheet" href="assets/style.css" />
-    <title>TRS</title>
+    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/notify_bar.css">
 </head>
 
-<body>
-    <!-- MANUBAR START-->
-    <nav class="navbar">
-        <div class="logo">TRS</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a> </li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
-    <!-- MANUBAR END-->
+
+
+
+<body class="bodystyle">
+
+    <!-- Notification-Bar-Start-->
+    <div class="notification-top-bar">
+        <p>Don't you have an account?
+            <small>
+                <a href="register.html">Register</a>
+            </small>
+        </p>
+    </div>
+    <!-- Notification-Bar-End-->
+
+
 
     <!-- CONTENT START-->
-
+    <div class="login-wrap">
+        <h2 class="heading-section">Welcome..!</h2><br>
+        <form action="#" class="signin-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                <span toggle="#password-field" class="toggle-password"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="signin">Login</button>
+            </div>
+            <div class="forgot">
+                <a href="#">Forgot Password</a>
+            </div>
+        </form>
+    </div>
     <!-- CONTENT END-->
 
-    <!-- FOOTER START-->
-    <footer>
-        <p>Footer</p>
-    </footer>
-    <!-- FOOTER END-->
 
+
+    <!-- FOOTER START-->
 </body>
 
 </html>

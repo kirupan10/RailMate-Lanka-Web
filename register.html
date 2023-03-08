@@ -2,40 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/notification.css">
     <link rel="stylesheet" href="assets/style.css" />
-    <title>TRS</title>
+    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/notify_bar.css">
+
 </head>
 
-<body>
-    <!-- MANUBAR START-->
-    <nav class="navbar">
-        <div class="logo">TRS</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a> </li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
-    <!-- MANUBAR END-->
+
+
+
+<body class="bodystyle">
+
+    <!-- Notification-Bar-Start-->
+    <div class="notification-top-bar">
+        <p>Already have an account?
+            <small>
+                <a href="login.html">Login</a>
+            </small>
+        </p>
+    </div>
+    <!-- Notification-Bar-End-->
+
+
 
     <!-- CONTENT START-->
+    <div class="login-wrap">
+        <h2 class="heading-section">Fill for Register</h2><br>
+        <form action="#" class="signin-form">
+            <div class="form-group">
+                <input type="text" class="form-control-signup" placeholder="Username" required>
+                <hr>
+                <input type="password" class="form-control-signup" placeholder="Password" required>
+                <hr>
+                <input type="password" class="form-control-signup" placeholder="Conform Password" required>
+                <hr>
+                <input type="text" class="form-control-signup" placeholder="First name" required>
+                <hr>
+                <input type="text" class="form-control-signup" placeholder="Last name" required>
+                <hr>
+                <input type="date" class="form-control-signup" placeholder="Date of Birth" required>
+                <hr>
+                <select id="gender" name="gender" placeholder="Select gender" class="form-control-signup">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <hr>
+                <label for="terms" style="color: aliceblue; font-size: medium;"><a href="conditions.html"> I agree to the terms and services:</a></label>
+                <input type="checkbox" id="terms" name="terms" required>
 
+            </div>
+            <div class="form-group">
+                <button type="submit" class="signin">Signup</button>
+            </div>
+
+        </form>
+    </div>
     <!-- CONTENT END-->
-
-    <!-- FOOTER START-->
-    <footer>
-        <p>Footer</p>
-    </footer>
     <!-- FOOTER END-->
-
 </body>
 
 </html>
