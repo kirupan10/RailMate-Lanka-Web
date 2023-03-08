@@ -6,125 +6,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style/style.css" />
-    <title>TRS</title>
+    <link rel="stylesheet" href="assets/style/notification.css" />
+    <link rel="stylesheet" href="assets/style/slider.css" />
+    <link rel="stylesheet" href="assets/style/notify_bar.css">
+    <link rel="stylesheet" href="assets/style/image.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/pricecalc.css">
+    <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+    <title>TrailMate Lanka</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">TRS</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a> </li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
-    <h1>A Fancy Table</h1>
+    <!-- Notification-Bar-Application-->
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Hey!</strong> Now App avaiable on <a href="#">iOS</a>/<a href="#">Android.</a>
+    </div>
 
-    <table id="customers">
-        <tr>
-            <th>Ref No</th>
-            <th>Name</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Date</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Berglunds snabbköp</td>
-            <td>Christina Berglund</td>
-            <td>Sweden</td>
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-            <td>UK</td>
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Königlich Essen</td>
-            <td>Philip Cramer</td>
-            <td>Germany</td>
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Laughing Bacchus Winecellars</td>
-            <td>Yoshi Tannamuri</td>
-            <td>Canada</td>
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Magazzini Alimentari Riuniti</td>
-            <td>Giovanni Rovelli</td>
-            <td>Italy</td>
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>North/South</td>
-            <td>Simon Crowther</td>
-            <td>UK</td>
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>Paris spécialités</td>
-            <td>Marie Bertrand</td>
-            <td>France</td>
+    <!-- MenuBar -->
+    <div>
+        <nav class="navbar">
+            <div class="logo">RailMate Lanka</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="booking.html">Reserve</a> </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
 
-            <td>2023.03.04</td>
-            <td><button class="button button1">View Record</button></td>
-
-        </tr>
-    </table>
+    <!-- Notification-Bar-->
+    <div class="notification-top-bar">
+        <p>Already have an account?
+            <small>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </small>
+        </p>
+    </div>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <h2>Reserve your seats.!!</h2>
+            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+        </div>
+    </div>
+    <!--footer-->
     <footer>
-        <div class="footer">
-            <p>Footer</p>
-            <p>Copyright to @Kirupan Inpathas.</p>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">RailMate Lanka</div>
+                    <p>Train booking systems are automated systems that allow customers to securely purchase tickets
+                        for
+                        a variety of train services online. </p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+94 21 221 1046</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>RailMateLanka@Outlook.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="#">Online Train Reservation</a></div>
+                <div><a href="#">Price Calculation</a></div>
+                <div><a href="#">Train Avaiablity Check</a></div>
+                <div><a href="#">News & Updates</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &#169; 2023 <a href="index.html">RailMate Lanka</a> All rights reserved</p>
         </div>
     </footer>
 </body>
 
-<script type="text/javascript" src="assets/slider.js"> </script>
+<!--Java-script-files-->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
+<script type="text/javascript" src="assets/js/image_grid.js"> </script>
+<script type="text/javascript" src="assets/js/pricecalc.js"> </script>
+
+</html>
+</body>
 
 </html>
