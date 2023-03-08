@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validateForm() {
+            var cost = 0;
+            let x = document.forms["myForm"]["seatno"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            var toWhere = document.getElementById("FromWhere").value;
+            var toFrom = document.getElementById("ToWhere").value;
+            var seatno = document.getElementById("seatno").value;
+            //alert(toWhere + " " + toFrom + " " + seatno);
+
+            if (toWhere == "RailMate0001" && toFrom == "RailMate0021") {
+                cost = 450.00 * seatno;
+            }
+            alert("Ticket cost: " + cost + ".00");
+            //document.getElementById("pricecalc").innerHTML = cost;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>JavaScript Validation</h2>
+
+
+    <div class="container">
+        <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+            <div class="row">
+                <div class="col-25">
+                    <label for="">From Where:</label>
+                </div>
+                <div class="col-75">
+                    <select id="FromWhere" name="FromWhere">
+                        <option value="RailMate0001">Jaffna</option>
+                        <option value="RailMate0002">Kilinochchi</option>
+                        <option value="RailMate0003">Vavuniya</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="">To Where:</label>
+                </div>
+                <div class="col-75">
+                    <select id="ToWhere" name="ToWhere">
+                        <option value="RailMate0001">Jaffna</option>
+                        <option value="RailMate0002">Kilinochchi</option>
+                        <option value="RailMate0003">Vavuniya</option>
+                        <option selected value="RailMate0021">Colombo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="">How many seats: </label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="seatno" name="seatno" placeholder="No. seats.">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Total Price: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="pricecalc" placeholder="00.00" disabled>
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <p id="pricecalc"></p>
+    </div>
+
+</body>
+
+</html>

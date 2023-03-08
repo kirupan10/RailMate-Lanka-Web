@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/pricecalc.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <title>TRS</title>
+    <title>TrailMate Lanka</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <!-- MenuBar -->
     <div>
         <nav class="navbar">
-            <div class="logo">TRS</div>
+            <div class="logo">TrailMate Lanka</div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <div class="menu">
@@ -54,13 +54,14 @@
     <div class="hero-image">
         <div class="hero-text">
             <h1 style="font-size:30px">Welcome to</h1>
-            <h1 style="font-size:50px">Train Reservation System</h1>
+            <h1 style="font-size:50px">TrailMate Lanka</h1>
             <br>
             <p> Onine based advanced Train Reservation System</p>
             <a class="button button1" href="#">Reserve your seats</a>
         </div>
     </div>
 
+    <!--price calc-->
     <div>
         <div class="header" id="myHeader">
             <div class="image-gallery">
@@ -70,50 +71,40 @@
         </div>
 
         <div class="container">
-            <form action="#">
+            <form name="myForm" onsubmit="return validateForm()" method="post">
                 <div class="row">
                     <div class="col-25">
-                        <label for="country">From Where:</label>
+                        <label for="">From Where:</label>
                     </div>
                     <div class="col-75">
-                        <select id="country" name="country">
-                            <option value="australia">Jaffna</option>
-                            <option value="canada">Kilinochchi</option>
-                            <option value="usa">Vavuniya</option>
+                        <select id="FromWhere" name="FromWhere">
+                            <option value="jaffna">Jaffna</option>
+                            <option value="kilinochchi">Kilinochchi</option>
+                            <option value="vavuniya">Vavuniya</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-25">
-                        <label for="country">To Where:</label>
+                        <label for="">To Where:</label>
                     </div>
                     <div class="col-75">
-                        <select id="country" name="country">
-                            <option value="australia">Jaffna</option>
-                            <option value="canada">Kilinochchi</option>
-                            <option value="usa">Vavuniya</option>
-                            <option selected value="usa">Colombo</option>
+                        <select id="ToWhere" name="ToWhere">
+                            <option value="jaffna">Jaffna</option>
+                            <option value="kilinochchi">Kilinochchi</option>
+                            <option value="vavuniya">Vavuniya</option>
+                            <option selected value="colombo">Colombo</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname">How many seats: </label>
+                        <label for="">How many seats: </label>
                     </div>
                     <div class="col-75">
-                        <input type="number" id="seatno" name="seatno" placeholder="No. seats.">
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lname">Total Price: </label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="pricecalc" placeholder="00.00" disabled>
+                        <input type="number" id="seatno" name="seatno" placeholder="Number of seats.">
                     </div>
                 </div>
                 <br>
@@ -322,7 +313,7 @@
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">About us</div>
+                    <div class="topic">TrailMate Lanka</div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
                         a variety of train services online. </p>
                 </div>
@@ -360,6 +351,6 @@
 <!--Java-script-files-->
 <script type="text/javascript" src="assets/js/slider.js"> </script>
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
-
+<script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 
 </html>
