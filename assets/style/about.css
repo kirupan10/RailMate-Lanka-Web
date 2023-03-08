@@ -38,7 +38,7 @@
     float: left;
     width: 25%;
     height:auto;
-    background: #ccc;
+    background: white;
     padding: 20px;
 }
 
@@ -70,12 +70,12 @@
 
 }
 body{
-    background-color: #3d3d3d;
+    background-color: white;
 }
 .section{
     width: 100%;
     min-height: 100vh;
-    background-color:#ccc;
+    background-color:white;
 }
 .container{
     width: 80%;
@@ -115,7 +115,7 @@ h1{
 .content-section .content p{
     margin-top: 10px;
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.5;
 }
 .content-section .content .button{

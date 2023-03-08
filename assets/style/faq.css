@@ -59,20 +59,20 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: black;
     text-align: center;
 }
 header {
     background-color:#4c9e9e;
     color:#fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #071407;
+    background-color: white;
 }
 #reservation{
     margin: 100px auto;

@@ -5,85 +5,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>TRS</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/notification.css" />
+    <link rel="stylesheet" href="assets/style/slider.css" />
+    <link rel="stylesheet" href="assets/style/notify_bar.css">
+    <link rel="stylesheet" href="assets/style/image.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/pricecalc.css">
+    <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+    <title>TrailMate Lanka</title>
 </head>
 
 <body>
-    <!-- MANUBAR START-->
-    <nav class="navbar">
+    <!-- Notification-Bar-Application-->
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Hey!</strong> Now App avaiable on <a href="#">iOS</a>/<a href="#">Android.</a>
+    </div>
 
-        <div class="logo">TRS</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a> </li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
+    <!-- MenuBar -->
+    <div>
+        <nav class="navbar">
+            <div class="logo">RailMate Lanka</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="booking.html">Reserve</a> </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
 
-   
-    <div class="contact">
-       <div class="content">
-          <h1>CONTACT US</h1>
-          <p><b>WELCOME! to our Contact Us page for train reservations! We are dedicated to providing exceptional customer service and ensuring that your train travel experience is comfortable and stress-free.<b></p><p> If you have any questions, comments, or concerns regarding train reservations, our team is here to assist you.
-
-            To contact us, please fill out the form below with your name, email address, and message.</p><p> We strive to respond to all inquiries within 24 hours. If your matter is urgent, please indicate so in your message and we will do our best to expedite a response.
-            
-            Alternatively, you can reach us by phone at [insert phone number] during our regular business hours.</p><p> Our friendly and knowledgeable customer service representatives are available to answer your questions and assist with any reservations or issues you may have.<br><b>
-            
-            Thank you for choosing to travel with us, and we look forward to serving you!</p>
+    <!-- Notification-Bar-->
+    <div class="notification-top-bar">
+        <p>Already have an account?
+            <small>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </small>
+        </p>
+    </div>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <h2>Need a help ?</h2>
+            <h4>Connect with us to get the help you need.</h4>
         </div>
-        <div class="container">
-            <div class="contact info">
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                    <div class="text">
-                        <h3>Address</h3>
-                        <p>No.5,Nanu Oya,Kandy.</p>
-                    </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">RailMate Lanka</div>
+                    <p>Train booking systems are automated systems that allow customers to securely purchase tickets
+                        for
+                        a variety of train services online. </p>
                 </div>
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                    <div class="text">
-                        <h3>Phone</h3>
-                        <p>0334467981<br>0779086745</p>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+94 21 221 1046</a>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-envelope-open"></i></div>
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p>Nanuoya01@gmail.com</p>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>RailMateLanka@Outlook.com</a>
                     </div>
                 </div>
             </div>
-            <div class="contact form">
-                <form>
-                    <h2>Send Messages</h2>
-                    <div class="inputbox">
-                        <input type="text" name="" required="required">
-                        <span>Full Name</span>
-                    </div>
-                    <div class="inputbox">
-                        <input type="text" name="" required="required">
-                        <span>E-mail</span>
-                    </div>
-                    <div class="inputbox">
-                       <textarea required="required"></textarea>
-                        <span>Type Your Message ...</span>
-                    </div>
-                    <div class="inputbox">
-                        <input type="Submit" name="" value="Send">
-                    </div>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="#">Online Train Reservation</a></div>
+                <div><a href="#">Price Calculation</a></div>
+                <div><a href="#">Train Avaiablity Check</a></div>
+                <div><a href="#">News & Updates</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
                 </form>
             </div>
-            <div class="footer"></div>
         </div>
-
+        <div class="bottom">
+            <p>Copyright &#169; 2023 <a href="index.html">RailMate Lanka</a> All rights reserved</p>
+        </div>
+    </footer>
 </body>
+
+<!--Java-script-files-->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
+<script type="text/javascript" src="assets/js/image_grid.js"> </script>
+<script type="text/javascript" src="assets/js/pricecalc.js"> </script>
+
+</html>
+</body>
+
 </html>
