@@ -2,40 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/notification.css">
     <link rel="stylesheet" href="assets/style.css" />
-    <title>TRS</title>
+    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/notify_bar.css">
 </head>
 
-<body>
-    <!-- MANUBAR START-->
-    <nav class="navbar">
-        <div class="logo">TRS</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a> </li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
+<body class="bodystyle">
+    <!-- Notification-Bar-Start-->
+    <div class="notification-top-bar">
+        <p>Don't you have an account?
+            <small>
+                <a href="register.html">Register</a>
+            </small>
+        </p>
+    </div>
+    <!-- Notification-Bar-End-->
+    <br><br>
+    <!-- sigin-form-->
+    <div class="login-wrap">
+        <h2 class="heading-section">Welcome..!</h2><br>
+        <form action="#" class="signin-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username" required>
             </div>
-        </ul>
-    </nav>
-    <!-- MANUBAR END-->
-
-    <!-- CONTENT START-->
-
-    <!-- CONTENT END-->
-
-    <!-- FOOTER START-->
+            <div class="form-group">
+                <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                <span toggle="#password-field" class="toggle-password"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="signin">Login</button>
+            </div>
+            <div class="forgot">
+                <a href="#">Forgot Password</a>
+            </div>
+        </form>
+    </div>
+    <br><br>
+    <!--footer-->
     <footer>
-        <p>Footer</p>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">RailMate Lanka</div>
+                    <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
+                        a variety of train services online. </p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+94 21 221 1046</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>RailMateLanka@Outlook.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="#">Online Train Reservation</a></div>
+                <div><a href="#">Price Calculation</a></div>
+                <div><a href="#">Train Avaiablity Check</a></div>
+                <div><a href="#">News & Updates</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &#169; 2023 <a href="index.html">RailMate Lanka</a> All rights reserved</p>
+        </div>
     </footer>
-    <!-- FOOTER END-->
-
 </body>
+
+<!--Java-script-files-->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
+<script type="text/javascript" src="assets/js/image_grid.js"> </script>
+<script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 
 </html>
