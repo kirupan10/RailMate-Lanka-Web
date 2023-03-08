@@ -1,0 +1,161 @@
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #808080;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+
+    padding: 5px 14px;
+
+}
+
+.logo {
+    font-size: 30px;
+}
+.gallery{
+    float: left;
+    width: 25%;
+    height:auto;
+    background: #ccc;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:grey;
+    color: #fff;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: #3d3d3d;
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color:#ccc;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float:left;
+    width: 55%;
+}
+.image-section{
+    float: right;
+    width: 40%;
+    margin-top: 100px;
+    
+   
+}
+.image-section img{
+    width: 100%;
+    height: auto;    
+}
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+h1{
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+}
+.content-section .content .button{
+    margin-top: 20px;
+}
+.content-section .content .button a{
+    background-color: #3d3d3d;
+    padding: 12px 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+.content-section .social{
+    margin-top:  20px;
+
+}
+.content-section .social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.content-section .content .button i:hover{
+    color: #3d3d3d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
