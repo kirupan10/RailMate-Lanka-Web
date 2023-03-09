@@ -5,34 +5,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking-External-Style_sheets-->
     <link rel="stylesheet" href="assets/style/style.css" />
     <link rel="stylesheet" href="assets/style/notification.css" />
     <link rel="stylesheet" href="assets/style/slider.css" />
     <link rel="stylesheet" href="assets/style/notify_bar.css">
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
-    <link rel="stylesheet" href="assets/style/pricecalc.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <title>TrailMate - forget pwd</title>
+    <link rel="stylesheet" href="assets/style/pricecalc.css">
+    <!-- Title-Image-->
+    <title>TrailMate - Profile</title>
+    <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
 <body>
-    <!-- Notification-Bar-Application-->
+    <!-- Notification-bar-Application-->
     <div class="alert">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        <strong>Hey!</strong> Now App avaiable on <a href="#">iOS</a>/<a href="#">Android.</a>
+        <strong>Hey!</strong> We are now available on <a href="https://www.apple.com/app-store/">iOS </a> & <a
+            href="https://play.google.com/">Android</a> platforms.
     </div>
 
-    <!-- MenuBar -->
+    <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo">RailMate Lanka</div>
+             <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
+            </div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="booking.html">Reserve</a> </li>
+                    <li><a href="seat_reservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -40,21 +47,47 @@
         </nav>
     </div>
 
-    <!-- Notification-Bar-->
-    <div class="notification-top-bar">
-        <p>Already have an account?
-            <small>
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </small>
-        </p>
-    </div>
+    <!-- profile-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <h2>Update Your Personal Information</h2>
+            <img src="assets/img/avatar.png" alt="Avatar woman">
+            <br><br>
+
+            <table style="width: 80%;" class="center">
+                <tr>
+                    <th>Full Name</th>
+                    <th><input type="text" id="FullName" required></th>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
+                </tr>
+
+                <tr>
+                    <th style="text-align: center;"><button id="updateFullname" class="button button2"
+                            onclick="ViewBooking()">Update Fullname</button></th>
+                    <th style="text-align: center;"><button id="cancel" class="button button3"
+                            onclick="cancel()">Cancel</button></th>
+                </tr>
+
+            </table>
         </div>
     </div>
+    <script type="text/javascript">
+        document.getElementById("updateFullname").onclick = function () {
+            let FullName = document.getElementById("FullName").value;
+            if(FullName != ""){
+                alert("FullName updated...");
+                location.href = "profile.html";
+            }else{
+                document.getElementById("errorShow").innerHTML = "Must fill the name";
+            }
+            
+        };
+        document.getElementById("cancel").onclick = function () {
+            location.href = "profile.html";
+        };
+    </script>
     <!--footer-->
     <footer>
         <div class="content">
@@ -97,12 +130,12 @@
             <p>Copyright &#169; 2023 <a href="index.html">RailMate Lanka</a> All rights reserved</p>
         </div>
     </footer>
-    </body>
-    
-    <!--Java-script-files-->
-    <script type="text/javascript" src="assets/js/slider.js"> </script>
-    <script type="text/javascript" src="assets/js/image_grid.js"> </script>
-    <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
-    <script type="text/javascript" src="assets/js/counter.js"></script>
-    
-    </html>
+</body>
+
+<!--Java-script-files-->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
+<script type="text/javascript" src="assets/js/image_grid.js"> </script>
+<script type="text/javascript" src="assets/js/pricecalc.js"> </script>
+<script type="text/javascript" src="assets/js/counter.js"></script>
+
+</html>
