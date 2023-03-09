@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <link rel="stylesheet" href="assets/style/pricecalc.css">
+    <link rel="stylesheet" href="assets/style/seat-reserve.css">
     <!-- Title-Image-->
-    <title>TrailMate - Profile</title>
+    <title>TrailMate - Seat Reservation</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -39,7 +39,7 @@
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="seat_reservation.html">Reservation</a> </li>
+                    <li><a href="SeatReservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -47,48 +47,44 @@
         </nav>
     </div>
 
-    <!-- profile-->
+    <!-- Notification-bar-->
+    <div class="notification-top-bar">
+        <p>Already have an account?
+            <small>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </small>
+        </p>
+    </div>
+
+    <!-- Seat-Reservation-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
-            <h2>RailMate Lanka - Forgot Password</h2>
-            <br>
-            <br><br>
-
-            <table style="width: 80%;" class="center">
-                <tr>
-                    <th>E-Mail Address</th>
-                    <th><input type="email" id="forgotPassword" required></th>
-                </tr>
-                <tr>
-                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
-                </tr>
-
-                <tr>
-                    <th style="text-align: center;"><button id="sendMail" class="button button2"
-                            onclick="ViewBooking()">Send Recovery Link</button></th>
-                    <th style="text-align: center;"><button id="cancel" class="button button3"
-                            onclick="cancel()">Cancel</button></th>
-                </tr>
-
-            </table>
+            <h2>Reserve your seats.!!</h2>
+            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
         </div>
     </div>
-    <script type="text/javascript">
-        document.getElementById("sendMail").onclick = function () {
-            let FullName = document.getElementById("forgotPassword").value;
-            if (FullName != "") {
-                alert("Recovery mail sent...");
-                location.href = "login.html";
-            } else {
-                document.getElementById("errorShow").innerHTML = "Must enter your E-Mail Address";
-            }
 
-        };
-        document.getElementById("cancel").onclick = function () {
-            location.href = "login.html";
-        };
-    </script>
+    <center>
+        <!-- (A) SEAT LAYOUT -->
+        <div id="layout"></div>
+
+        <!-- (B) LEGEND -->
+        <div id="legend">
+            <div class="seat"></div>
+            <div class="txt">Available</div>
+            <div class="seat taken"></div>
+            <div class="txt">Taken</div>
+            <div class="seat selected"></div>
+            <div class="txt">Your Chosen Seats</div>
+        </div>
+
+        <!-- (C) SAVE SELECTION -->
+        <button id="save" onclick="reserve.save()">Reserve Seats</button>
+        <br><br>
+    </center>
+
+
     <!--footer-->
     <footer>
         <div class="content">
@@ -112,12 +108,14 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="news_update.html">News & Updates</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
                 <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
+
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -138,5 +136,6 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
+<script type="text/javascript" src="assets/js/seat-reserve.js"></script>
 
 </html>

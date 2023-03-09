@@ -34,7 +34,7 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-             <div class="logo">
+            <div class="logo">
                 <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
             </div>
             <!-- NAVIGATION MENU -->
@@ -42,7 +42,7 @@
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="seat_reservation.html">Reservation</a> </li>
+                    <li><a href="SeatReservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -122,13 +122,30 @@
             </div>
         </li>
     </ul>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <table style="width: 100%;" class="center">
+                <tr>
+                    <th style="text-align: center;"><button id="FAQ" class="button button1"
+                            onclick="ViewBooking()">Back
+                            To Main Page</button></th>
+                </tr>
 
+
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("FAQ").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                   <div class="topic">
+                    <div class="topic">
                         <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
                     </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
@@ -146,12 +163,13 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="news_update.html">News & Updates</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
                 <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
