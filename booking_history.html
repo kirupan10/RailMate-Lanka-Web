@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <link rel="stylesheet" href="assets/style/pricecalc.css">
     <!-- Title-Image-->
-    <title>TrailMate - Profile</title>
+    <title>TrailMate - History</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -31,7 +30,7 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo">
+             <div class="logo">
                 <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
             </div>
             <!-- NAVIGATION MENU -->
@@ -47,46 +46,70 @@
         </nav>
     </div>
 
-    <!-- profile-->
+
+
+    <!-- Booking-history-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
             <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
-            <h2>RailMate Lanka - Forgot Password</h2>
+            <h2>RailMate Lanka - Reservation History</h2>
             <br>
-            <br><br>
-
-            <table style="width: 80%;" class="center">
+            <table style="width: 100%;" class="center">
                 <tr>
-                    <th>E-Mail Address</th>
-                    <th><input type="email" id="forgotPassword" required></th>
-                </tr>
-                <tr>
-                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
-                </tr>
-
-                <tr>
-                    <th style="text-align: center;"><button id="sendMail" class="button button2"
-                            onclick="ViewBooking()">Send Recovery Link</button></th>
-                    <th style="text-align: center;"><button id="cancel" class="button button3"
-                            onclick="cancel()">Cancel</button></th>
+                    <th>Reservation No</th>
+                    <th>Name</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>No of Seats</th>
+                    <th>Class</th>
+                    <th></th>
                 </tr>
 
+                <tr>
+                    <td>RW00372</td>
+                    <td>Kirupan Inpathas</td>
+                    <td>Jaffna</td>
+                    <td>Fort,Colombo</td>
+                    <td>4</td>
+                    <td>First</td>
+                    <th style="text-align: center;"><button id="bookingView1" class="button button4">View</button>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>RW00258</td>
+                    <td>Kirupan Inpathas</td>
+                    <td>Colombo</td>
+                    <td>Matara</td>
+                    <td>2</td>
+                    <td>Second</td>
+                    <th style="text-align: center;"><button id="bookingView2" class="button button4"
+                            onclick="BookingHistory">View</button></th>
+                </tr>
+
+                <tr>
+                    <td>RW00189</td>
+                    <td>Kirupan Inpathas</td>
+                    <td>Colombo</td>
+                    <td>Vavuniya</td>
+                    <td>1</td>
+                    <td>First</td>
+                    <th style="text-align: center;"><button id="bookingView3" class="button button4">View</button></th>
+
+                </tr>
             </table>
         </div>
     </div>
-    <script type="text/javascript">
-        document.getElementById("sendMail").onclick = function () {
-            let FullName = document.getElementById("forgotPassword").value;
-            if (FullName != "") {
-                alert("Recovery mail sent...");
-                location.href = "login.html";
-            } else {
-                document.getElementById("errorShow").innerHTML = "Must enter your E-Mail Address";
-            }
 
+    <script type="text/javascript">
+        document.getElementById("bookingView1").onclick = function () {
+            location.href = "booking_preview.html";
         };
-        document.getElementById("cancel").onclick = function () {
-            location.href = "login.html";
+        document.getElementById("bookingView2").onclick = function () {
+            location.href = "booking_preview.html";
+        };
+        document.getElementById("bookingView3").onclick = function () {
+            location.href = "booking_preview.html";
         };
     </script>
     <!--footer-->
@@ -138,5 +161,6 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
+<script type="text/javascript" src="assets/js/onclick.js"></script>
 
 </html>

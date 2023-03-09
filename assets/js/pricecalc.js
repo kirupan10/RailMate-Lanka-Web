@@ -13,7 +13,7 @@ function validateForm() {
                 cost = 450.00 * seatno;
             }
             if (window.confirm("From: " + toWhere + " \nTo: " + toFrom + "\nTrain: Yazh Devi" + "\nSeat No: " + seatno + "\nTicket cost: " + cost + ".00\n\n" + "Do you want to reserve seats?")) {
-                window.open("exit.html", "Thanks for Visiting!");
+                window.open("seat_reservation.html", "Thanks for Visiting!");
             } else {
                 window.open("index.html", "Thanks for Visiting!");
             }

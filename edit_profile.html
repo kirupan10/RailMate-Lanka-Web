@@ -31,7 +31,7 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo">
+             <div class="logo">
                 <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
             </div>
             <!-- NAVIGATION MENU -->
@@ -50,23 +50,22 @@
     <!-- profile-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
-            <h2>RailMate Lanka - Forgot Password</h2>
-            <br>
+            <h2>Update Your Personal Information</h2>
+            <img src="assets/img/avatar.png" alt="Avatar woman">
             <br><br>
 
             <table style="width: 80%;" class="center">
                 <tr>
-                    <th>E-Mail Address</th>
-                    <th><input type="email" id="forgotPassword" required></th>
+                    <th>Full Name</th>
+                    <th><input type="text" id="FullName" required></th>
                 </tr>
                 <tr>
                     <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
                 </tr>
 
                 <tr>
-                    <th style="text-align: center;"><button id="sendMail" class="button button2"
-                            onclick="ViewBooking()">Send Recovery Link</button></th>
+                    <th style="text-align: center;"><button id="updateFullname" class="button button2"
+                            onclick="ViewBooking()">Update Fullname</button></th>
                     <th style="text-align: center;"><button id="cancel" class="button button3"
                             onclick="cancel()">Cancel</button></th>
                 </tr>
@@ -75,18 +74,18 @@
         </div>
     </div>
     <script type="text/javascript">
-        document.getElementById("sendMail").onclick = function () {
-            let FullName = document.getElementById("forgotPassword").value;
-            if (FullName != "") {
-                alert("Recovery mail sent...");
-                location.href = "login.html";
-            } else {
-                document.getElementById("errorShow").innerHTML = "Must enter your E-Mail Address";
+        document.getElementById("updateFullname").onclick = function () {
+            let FullName = document.getElementById("FullName").value;
+            if(FullName != ""){
+                alert("FullName updated...");
+                location.href = "profile.html";
+            }else{
+                document.getElementById("errorShow").innerHTML = "Must fill the name";
             }
-
+            
         };
         document.getElementById("cancel").onclick = function () {
-            location.href = "login.html";
+            location.href = "profile.html";
         };
     </script>
     <!--footer-->
@@ -94,7 +93,7 @@
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">
+                   <div class="topic">
                         <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
                     </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
