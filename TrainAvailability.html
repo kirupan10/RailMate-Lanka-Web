@@ -7,22 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Linking-External-Style_sheets-->
-    <link rel="stylesheet" href="assets/style/about.css">
-    <link rel="stylesheet" href="assets/style/counter.css">
-    <link rel="stylesheet" href="assets/style/contact.css">
     <link rel="stylesheet" href="assets/style/style.css" />
-    <link rel="stylesheet" href="assets/style/slider.css" />
-    <link rel="stylesheet" href="assets/style/seat-reserve.css">
     <link rel="stylesheet" href="assets/style/notification.css" />
+    <link rel="stylesheet" href="assets/style/slider.css" />
     <link rel="stylesheet" href="assets/style/notify_bar.css">
     <link rel="stylesheet" href="assets/style/image.css">
-    <link rel="stylesheet" href="assets/style/faq.css">
     <link rel="stylesheet" href="assets/style/footer.css">
-    <link rel="stylesheet" href="assets/style/pricecalc.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
     <link rel="stylesheet" href="assets/style/pricecalc.css">
     <!-- Title-Image-->
-    <title>TrailMate - Contact</title>
+    <title>TrailMate - Profile</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -53,92 +47,93 @@
         </nav>
     </div>
 
-    <!-- Notification-bar-->
-    <div class="notification-top-bar">
-        <p>Already have an account?
-            <small>
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </small>
-        </p>
-    </div>
-
-    <!-- contact-->
+    <!-- Trains Availability-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Need a help ?</h2>
-            <h4>Connect with us to get the help you need.</h4>
-        </div>
-    </div>
-    <div class="formcontent">
-        <div class="content-contactform">
-            <section>
-                <h2>Address</h2>
-                <i class="fa-solid fa-map-location-dot"></i>
-                <p>Nanu oya<br>No8.Kandy.</p><br><br>
-            </section>
+            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
+            <h2>RailMate Lanka - Trains Availability</h2>
+            <br>
+            <br>
 
-            <section>
-                <h2>Phone</h2>
-                <i class="fa-solid fa-phone"></i>
-                <p>+94 21 221 1046</p><br><br>
-            </section>
-
-            <section>
-                <h2>E-mail</h2>
-                <i class="fa-solid fa-envelope-open"></i>
-                <p>RailmateLanka@outlook.com</p><br><br>
-            </section>
-
-        </div>
-    </div>
-
-    <form>
-        <div class="contactform">
-            <div class="right">
-                <div class="contact-contactform">
-                    <span>Full Name</span>
-                    <input type="text" name="" required="required">
-
-                </div>
-
-                <div class="contact-contactform">
-                    <span>E-mail</span>
-                    <input type="text" name="" required="required">
-
-                </div>
-
-                <div class="contact-contactform">
-                    <span>Type Your Message ...</span>
-                    <textarea required="required"></textarea>
-
-                </div>
-
-                <div class="contact-contactform">
-                    <input type="Submit" name="" value="Submit">
-                </div>
-                <br><br>
-            </div>
-        </div>
-    </form>
-    <br><br>
-    </div>
-    <div class="header" id="myHeader">
-        <div class="image-gallery">
-            <table style="width: 100%;" class="center">
+            <table style="width: 80%;" class="center">
                 <tr>
-                    <th style="text-align: center;"><button id="Contact" class="button button1"
-                            onclick="ViewBooking()">Back
-                            To Main Page</button></th>
+                    <th>From</th>
+                    <td>
+                        <select id="FromLocation" name="FromWhere">
+                            <option value="jaffna">Jaffna</option>
+                            <option value="kilinochchi">Kilinochchi</option>
+                            <option value="vavuniya">Vavuniya</option>
+                        </select>
+                    </td>
                 </tr>
 
+                <tr>
+                    <th>To</th>
+                    <td>
+                        <select id="ToLocation" name="FromWhere">
+                            <option value="jaffna">Jaffna</option>
+                            <option value="kilinochchi">Kilinochchi</option>
+                            <option value="vavuniya">Vavuniya</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Class</th>
+                    <td>
+                        <select id="TrainClass" name="FromWhere">
+                            <option value="FirstClass">First</option>
+                            <option value="SecondClass">Second</option>
+                            <option value="ThirdClass">Third</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Seats</th>
+                    <td> <input type="number" id="SeatReservation" required></td>
+                </tr>
+
+                <tr>
+                    <th>Date</th>
+                    <th><input type="date" id="DateReservation" required></th>
+                </tr>
+                <tr>
+
+
+                </tr>
+
+
+                <tr>
+                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
+                </tr>
+
+                <tr>
+                    <th style="text-align: center;"><button id="updateFullname" class="button button2"
+                            onclick="ViewBooking()">Check Availability</button></th>
+                    <th style="text-align: center;"><button id="cancel" class="button button3"
+                            onclick="cancel()">Cancel</button></th>
+                </tr>
 
             </table>
         </div>
     </div>
     <script type="text/javascript">
-        document.getElementById("Contact").onclick = function () {
-            location.href = "index.html";
+        document.getElementById("updateFullname").onclick = function () {
+            let ToLocation = document.getElementById("ToLocation").value;
+            let FromLocation = document.getElementById("FromLocation").value;
+            let TrainClass = document.getElementById("TrainClass").value;
+            let SeatReservation = document.getElementById("SeatReservation").value;
+            let DateReservation = document.getElementById("DateReservation").value;
+            if (ToLocation != "" && FromLocation != "" && TrainClass != "" && SeatReservation != "" && DateReservation != "") {
+                location.href = "SelectTrain.html";
+            } else {
+                document.getElementById("errorShow").innerHTML = "Must fill all the field in this form";
+            }
+
+        };
+        document.getElementById("cancel").onclick = function () {
+            location.href = "profile.html";
         };
     </script>
     <!--footer-->

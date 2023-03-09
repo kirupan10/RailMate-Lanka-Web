@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="assets/style/notify_bar.css">
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
-
+    <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+    <link rel="stylesheet" href="assets/style/seat-reserve.css">
     <!-- Title-Image-->
-    <title>TrailMate - About</title>
+    <title>TrailMate - Seat Reservation</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -56,11 +57,13 @@
         </p>
     </div>
 
-    <!-- About-->
+    <!-- Seat-Reservation-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>RailMate Lanka</h2>
+<<<<<<<< HEAD:news_cost_effective.html
+            <h1>RailMate Lanka</h1>
             <h4>Onine based advanced Train Reservation System</h4>
+            <h2>Cost-effective</h2>
         </div>
     </div>
     <div class="section">
@@ -69,29 +72,23 @@
                 <div class="title">
                 </div>
                 <div class="content">
-                    <p style="font-size:1.5vw; padding: 20px;">A train reservation system is a digital platform that
-                        enables passengers
-                        to book train tickets
-                        and plan their travel itinerary in advance. It provides a user-friendly interface for users to
-                        search for train schedules, routes, and ticket availability.
-
-                        The system typically requires users to provide their journey details, such as the departure and
-                        destination stations, date of travel, and the type of class they wish to travel in. Once the
-                        details are entered, the system displays a list of available trains along with their schedules
-                        and ticket prices.
-
-                        Passengers can then select the train of their choice, select the class of travel, and make a
-                        payment using various payment options. The system then generates an e-ticket that can be printed
-                        or downloaded on the passenger's mobile device.
-
-                        The train reservation system also provides passengers with real-time updates on their train
-                        schedules, delays, cancellations, and other important information related to their journey. The
-                        system also enables users to cancel or modify their tickets if required.
-
-                        The system is typically managed by the railway authorities or a third-party service provider. It
-                        is designed to streamline the ticket booking process and make it more efficient, convenient, and
-                        hassle-free for passengers.
+                    <p style="font-size:1.5vw; padding: 20px;">Sri Lanka's railway system is one of the oldest and most scenic in the world. It offers travellers an opportunity to experience the stunning landscapes of the country in a comfortable and cost-effective manner. The cost-effective Sri Lankan railway system is an excellent way to explore the country without breaking the bank.
+                            <br><br>
+                        One of the best ways to save money while travelling on the Sri Lankan railway is by choosing the right class of travel. Sri Lankan Railways offers first, second, and third class seats. Second and third-class seats are more affordable than first-class, making them an excellent choice for budget-conscious travellers. While first-class seats offer added luxury and comfort, second and third-class seats still provide comfortable seating arrangements and are a good option for travellers on a tight budget.
+                            <br><br>
+                        Another way to save money while travelling on the Sri Lankan railway is by booking in advance. Advance bookings can be made up to 30 days before the travel date, and by doing so, travellers can often secure cheaper fares. This is especially useful during peak season, which runs from December to January and during school holidays, as prices tend to be higher during these periods.
+                            <br><br>
+                        Travellers can also save money by using the local train service, which is a cheaper option compared to the express trains, although the journey may take longer. Local trains are ideal for shorter journeys and can provide an affordable way to explore the local areas. By taking local trains, travellers can save a significant amount of money, which can be spent on other activities during their trip.
+                            <br><br>
+                        It is also advisable to bring your own food and drinks on the train. The food and drinks sold on Sri Lankan trains can be expensive, and by bringing your own snacks and drinks, you can save money while still enjoying a comfortable journey.
+                            <br><br>
+                        For those travelling in a group, negotiating a lower price for a private carriage is an excellent way to save money while travelling in comfort. Private carriages provide added privacy and comfort, and if you're travelling a long distance, they can be a worthwhile investment.
+                            <br><br>
+                        In conclusion, the cost-effective Sri Lankan railway system is an excellent way to explore the country without spending too much money. By choosing the right class of travel, booking in advance, using the local train service, bringing your own food and drink, and negotiating prices for private carriages, travellers can enjoy a comfortable and affordable journey on one of the most scenic railway systems in the world. Whether you're a budget-conscious traveller or simply looking for an affordable way to explore the country, the Sri Lankan railway system has something to offer for everyone
                     </p>
+                    <div class="button button1">
+                        <a href="">Read More</a>
+                    </div>
                     <br><br>
                 </div>
                 <div class="social">
@@ -106,26 +103,33 @@
                 <img class="responsive_image_about" src="assets/abt.jpg">
                 <br><br>
             </div>
+========
+            <h2>Reserve your seats.!!</h2>
+            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
         </div>
     </div>
-    <div class="header" id="myHeader">
-        <div class="image-gallery">
-            <table style="width: 100%;" class="center">
-                <tr>
-                    <th style="text-align: center;"><button id="About" class="button button1"
-                            onclick="ViewBooking()">Back
-                            To Main Page</button></th>
-                </tr>
 
+    <center>
+        <!-- (A) SEAT LAYOUT -->
+        <div id="layout"></div>
 
-            </table>
+        <!-- (B) LEGEND -->
+        <div id="legend">
+            <div class="seat"></div>
+            <div class="txt">Available</div>
+            <div class="seat taken"></div>
+            <div class="txt">Taken</div>
+            <div class="seat selected"></div>
+            <div class="txt">Your Chosen Seats</div>
+>>>>>>>> 746c1d898e277dfaf54a52fe13de7e0c3ebe36c9:SeatReservation.html
         </div>
-    </div>
-    <script type="text/javascript">
-        document.getElementById("About").onclick = function () {
-            location.href = "index.html";
-        };
-    </script>
+
+        <!-- (C) SAVE SELECTION -->
+        <button id="save" onclick="reserve.save()">Reserve Seats</button>
+        <br><br>
+    </center>
+
+
     <!--footer-->
     <footer>
         <div class="content">
@@ -156,6 +160,7 @@
                 <div><a href="faq.html">FAQ</a></div>
                 <div><a href="profile.html">Dashboard</a></div>
                 <div><a href="trains.html">Trains List</a></div>
+
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -176,5 +181,6 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
+<script type="text/javascript" src="assets/js/seat-reserve.js"></script>
 
 </html>

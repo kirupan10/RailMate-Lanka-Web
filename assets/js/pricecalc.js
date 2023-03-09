@@ -9,13 +9,14 @@ function validateForm() {
         } else {
             var toWhere = document.getElementById("FromWhere").value;
             var toFrom = document.getElementById("ToWhere").value;
-            if (toWhere == "jaffna" && toFrom == "colombo") {
-                cost = 450.00 * seatno;
+            var classTrain = document.getElementById("class").value;
+            if (toWhere == "jaffna" && toFrom == "colombo" && classTrain == "FirstClass") {
+                cost = 2250 * seatno;
             }
-            if (window.confirm("From: " + toWhere + " \nTo: " + toFrom + "\nTrain: Yazh Devi" + "\nSeat No: " + seatno + "\nTicket cost: " + cost + ".00\n\n" + "Do you want to reserve seats?")) {
-                window.open("exit.html", "Thanks for Visiting!");
+            if (window.confirm("From: " + toWhere + " \nTo: " + toFrom + "\nTrain: Yazh Devi" + "\nSeat No: " + seatno + "\nTicket cost: " + cost + ".00" + "\nClass: " + classTrain + "\n\n" + "Do you want to reserve seats?")) {
+                window.open("SelectTrain.html", "Reservation");
             } else {
-                window.open("index.html", "Thanks for Visiting!");
+                window.open("index.html");
             }
         }
 
@@ -23,14 +24,14 @@ function validateForm() {
         var toWhere = document.getElementById("FromWhere").value;
         var toFrom = document.getElementById("ToWhere").value;
         var seatno = document.getElementById("seatno").value;
-
-        if (toWhere == "jaffna" && toFrom == "colombo") {
-            cost = 450.00 * seatno;
+        var classTrain = document.getElementById("class").value;
+        if (toWhere == "jaffna" && toFrom == "colombo" && classTrain == "FirstClass") {
+            cost = 2250 * seatno;
         }
-        if (window.confirm("From: " + toWhere + " \nTo: " + toFrom + "\nTrain: Yazh Devi" + "\nSeat No: " + seatno + "\nTicket cost: " + cost + ".00\n\n" + "Do you want to reserve seats?")) {
-            window.open("exit.html", "Thanks for Visiting!");
+        if (window.confirm("From: " + toWhere + " \nTo: " + toFrom + "\nTrain: Yazh Devi" + "\nSeat No: " + seatno + "\nTicket cost: " + cost + ".00" + "\nClass: " + classTrain + "\n\n" + "Do you want to reserve seats?")) {
+            window.open("SelectTrain.html", "Reservation");
         } else {
-            window.open("index.html", "Thanks for Visiting!");
+            window.open("index.html");
         }
     }
 }

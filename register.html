@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/style/login.css">
     <link rel="stylesheet" href="assets/style/notify_bar.css">
 
+    <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
+
 </head>
 
 <body class="bodystyle">
@@ -53,23 +55,26 @@
                 <input type="checkbox" id="terms" name="terms" required>
             </div>
             <div class="form-group">
-                <button type="submit" class="signin">Signup</button>
+                <button id="signupButton" type="submit" class="signin">Signup</button>
             </div>
 
         </form>
     </div>
     <br><br>
+
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">RailMate Lanka</div>
+                   <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
                         a variety of train services online. </p>
                 </div>
                 <div class="lower">
-                    <div class="topic">Contact us</div>
+                    <div class="topic">Need a help ? </div>
                     <div class="phone">
                         <a href="#"><i class="fas fa-phone-volume"></i>+94 21 221 1046</a>
                     </div>
@@ -80,14 +85,17 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="#">Online Train Reservation</a></div>
-                <div><a href="#">Price Calculation</a></div>
-                <div><a href="#">Train Avaiablity Check</a></div>
-                <div><a href="#">News & Updates</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
+                <div><a href="pricing.html">Price Calculation</a></div>
+                <div><a href="conditions.html">Terms & Conditions</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
+                <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
-                <form action="#">
+                <form action="">
                     <input type="text" placeholder="Enter email address">
                     <input type="submit" name="" value="Send">
                 </form>
@@ -103,7 +111,7 @@
 <script type="text/javascript" src="assets/js/slider.js"> </script>
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
-
-</html>
+<script type="text/javascript" src="assets/js/counter.js"></script>
+<script type="text/javascript" src="assets/js/onclick.js"></script>
 
 </html>

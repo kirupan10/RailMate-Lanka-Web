@@ -21,10 +21,10 @@ $.fn.jQuerySimpleCounter = function (options) {
 };
 
 
-$('#number1').jQuerySimpleCounter({ end: 12, duration: 3000 });
-$('#number2').jQuerySimpleCounter({ end: 55, duration: 3000 });
-$('#number3').jQuerySimpleCounter({ end: 359, duration: 2000 });
-$('#number4').jQuerySimpleCounter({ end: 246, duration: 2500 });
+$('#number1').jQuerySimpleCounter({ end: 39, duration: 5000 });
+$('#number2').jQuerySimpleCounter({ end: 55, duration: 5000 });
+$('#number3').jQuerySimpleCounter({ end: 3590, duration: 5000 });
+$('#number4').jQuerySimpleCounter({ end: 246, duration: 5000 });
 
 
 

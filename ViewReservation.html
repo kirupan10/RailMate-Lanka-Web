@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <link rel="stylesheet" href="assets/style/seat-reserve.css">
     <!-- Title-Image-->
-    <title>TrailMate - Seat Reservation</title>
+    <title>TrailMate - Preview</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -31,13 +30,15 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo"><img src="assets/img/logo.png" alt=""> RailMate Lanka</div>
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
+            </div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="seat_reservation.html">Reservation</a> </li>
+                    <li><a href="SeatReservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -45,50 +46,78 @@
         </nav>
     </div>
 
-    <!-- Notification-bar-->
-    <div class="notification-top-bar">
-        <p>Already have an account?
-            <small>
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </small>
-        </p>
-    </div>
 
-    <!-- Seat-Reservation-->
+    <!-- Booking-Preview-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
+            <h2>RailMate Lanka - View Reservation</h2>
+            <br><br>
+
+            <table style="width: 80%;" class="center">
+                <tr>
+                    <th>Reservation No</th>
+                    <td>RW00372</td>
+                </tr>
+
+                <tr>
+                    <th>Name</th>
+                    <td>Kirupan Inpathas</td>
+                </tr>
+
+                <tr>
+                    <th>Phone Number</th>
+                    <td>0770221046</td>
+                </tr>
+
+                <tr>
+                    <th>From</th>
+                    <td>Jaffna</td>
+                </tr>
+
+                <tr>
+                    <th>To</th>
+                    <td>Colombo</td>
+                </tr>
+
+                <tr>
+                    <th>No of Seats</th>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <th>Class</th>
+                    <td>First</td>
+                </tr>
+
+                <tr>
+                    <th>Date</th>
+                    <td>24.03.2023</td>
+                </tr>
+
+                <tr>
+                    <th colspan="2" style="text-align: center;"><button id="ViewBooking" class="button button1"
+                            onclick="ViewBooking()">Back To Main Page</button></th>
+                </tr>
+
+            </table>
         </div>
     </div>
+    <script type="text/javascript">
+        document.getElementById("ViewBooking").onclick = function () {
 
-    <center>
-        <!-- (A) SEAT LAYOUT -->
-        <div id="layout"></div>
-
-        <!-- (B) LEGEND -->
-        <div id="legend">
-            <div class="seat"></div>
-            <div class="txt">Available</div>
-            <div class="seat taken"></div>
-            <div class="txt">Taken</div>
-            <div class="seat selected"></div>
-            <div class="txt">Your Chosen Seats</div>
-        </div>
-
-        <!-- (C) SAVE SELECTION -->
-        <button id="save" onclick="reserve.save()">Reserve Seats</button>
-        <br><br>
-    </center>
-
+            location.href = "index.html";
+        };
+    </script>
 
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">RailMate Lanka</div>
+                    <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
                         a variety of train services online. </p>
                 </div>
@@ -104,11 +133,13 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="news_update.html">News & Updates</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -129,6 +160,5 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
-<script type="text/javascript" src="assets/js/seat-reserve.js"></script>
 
 </html>

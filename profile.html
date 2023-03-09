@@ -30,13 +30,15 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo"><img src="assets/img/logo.png" alt=""> RailMate Lanka</div>
+             <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
+            </div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="seat_reservation.html">Reservation</a> </li>
+                    <li><a href="SeatReservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -44,30 +46,93 @@
         </nav>
     </div>
 
-    <!-- Notification-bar-->
-    <div class="notification-top-bar">
-        <p>Already have an account?
-            <small>
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </small>
-        </p>
-    </div>
-
     <!-- profile-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <h2>Welcome back, Kirupan Inpathas</h2>
+            <img src="assets/img/avatar.png" alt="Avatar woman">
+            <br><br>
+
+            <table style="width: 80%;" class="center">
+                <tr>
+                    <th>Full Name</th>
+                    <th>Kirupan Inpathas</th>
+                    <th style="text-align: center;"><button id="ChangeName" class="button button4">Edit</button></th>
+                </tr>
+
+                <tr>
+                    <th>username</th>
+                    <th>kirupan10</th>
+                    <th style="text-align: center;"></th>
+                </tr>
+
+                <tr>
+                    <th>Mail Address</th>
+                    <th>ikirupan@gmail.com</th>
+                    <th style="text-align: center;"></th>
+                </tr>
+
+                <tr>
+                    <th>Phone Number</th>
+                    <th>0770221046</th>
+                    <th style="text-align: center;"><button id="ChangeNumber" class="button button4">Edit</button></th>
+                </tr>
+
+                <tr>
+                    <th>Date of Birth</th>
+                    <th>2001.06.10</th>
+                    <th style="text-align: center;"><button id="ChangeBirth" class="button button4">Edit</button></th>
+                </tr>
+
+                <tr>
+                    <th>Gender</th>
+                    <th>Male</th>
+                    <th style="text-align: center;"><button id="ChangeGender" class="button button4">Edit</button></th>
+                </tr>
+
+                <tr>
+                    <th>Password</th>
+                    <th>*************</th>
+                    <th style="text-align: center;"><button id="ChangePassword" class="button button4">Edit</button>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th style="text-align: right;"><button id="ViewBooking" class="button button2"
+                            onclick="ViewBooking()">View My Booking History</button></th>
+                    <th colspan="2" style="text-align: center;"><button id="logout" class="button button3"
+                            onclick="logout()">Logout</button></th>
+                </tr>
+
+            </table>
         </div>
     </div>
+    <script type="text/javascript">
+        document.getElementById("ChangeName").onclick = function () {
+            location.href = "EditProfile.html";
+        };
+        document.getElementById("ChangeNumber").onclick = function () {
+            location.href = "EditProfile.html";
+        };
+        document.getElementById("ChangeBirth").onclick = function () {
+            location.href = "EditProfile.html";
+        };
 
+        document.getElementById("ChangeGender").onclick = function () {
+            location.href = "EditProfile.html";
+        };
+        document.getElementById("ChangePassword").onclick = function () {
+            location.href = "EditProfile.html";
+        };
+    </script>
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">RailMate Lanka</div>
+                   <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
                         a variety of train services online. </p>
                 </div>
@@ -83,11 +148,13 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="news_update.html">News & Updates</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -108,5 +175,6 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
+<script type="text/javascript" src="assets/js/onclick.js"></script>
 
 </html>

@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+
     <!-- Title-Image-->
-    <title>TrailMate - Preview</title>
+    <title>TrailMate - Train Details</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -30,13 +31,15 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo"><img src="assets/img/logo.png" alt=""> RailMate Lanka</div>
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
+            </div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="seat_reservation.html">Reservation</a> </li>
+                    <li><a href="SeatReservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -54,20 +57,72 @@
         </p>
     </div>
 
-    <!-- Booking-Preview-->
+    <!-- Trains-details-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
+            <h2>RailMate Lanka - View Train</h2>
+            <br><br>
+
+            <table style="width: 80%;" class="center">
+                <tr>
+                    <th>Train Name</th>
+                    <td>Yazh Devi</td>
+                </tr>
+
+                <tr>
+                    <th>Train Number</th>
+                    <td>TRSL765</td>
+                </tr>
+
+                <tr>
+                    <th>Start</th>
+                    <td>Jaffna</td>
+                </tr>
+
+                <tr>
+                    <th>End</th>
+                    <td>Colombo</td>
+                </tr>
+
+                <tr>
+                    <th>Departure</th>
+                    <td>06.00 AM</td>
+                </tr>
+
+                <tr>
+                    <th>Arrival</th>
+                    <td>06.00 PM</td>
+                </tr>
+
+                <tr>
+                    <th>Class</th>
+                    <td>All Available</td>
+                </tr>
+
+
+                <tr>
+                    <th colspan="2" style="text-align: center;"><button id="ViewTrain" class="button button1"
+                            onclick="ViewBooking()">Back To Trains List</button></th>
+                </tr>
+
+            </table>
         </div>
     </div>
+    <script type="text/javascript">
+        document.getElementById("ViewTrain").onclick = function () {
+            location.href = "trains.html";
+        };
+    </script>
 
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">RailMate Lanka</div>
+                    <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
                         a variety of train services online. </p>
                 </div>
@@ -83,11 +138,13 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="news_update.html">News & Updates</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>

@@ -9,15 +9,13 @@
     <!-- Linking-External-Style_sheets-->
     <link rel="stylesheet" href="assets/style/style.css" />
     <link rel="stylesheet" href="assets/style/notification.css" />
-    <link rel="stylesheet" href="assets/style/slider.css" />
     <link rel="stylesheet" href="assets/style/notify_bar.css">
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    
 
     <!-- Title-Image-->
-    <title>TrailMate - View Records</title>
+    <title>TrailMate - News</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -32,13 +30,15 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo"><img src="assets/img/logo.png" alt=""> RailMate Lanka</div>
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
+            </div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="seat_reservation.html">Reservation</a> </li>
+                    <li><a href="SeatReservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -56,20 +56,89 @@
         </p>
     </div>
 
-    <!-- View-records-->
+    <!--News-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <h2>News, Updates</h2>
+            <h4>Stay Informed, Stay Connected!</h4>
         </div>
     </div>
 
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image1.jpg">
+                <img src="assets/img/news_image1.jpg" alt="Cinque Terre" width="600" height="300">
+            </a>
+            <div class="desc">Interrupts - Northern </div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image2.jpg">
+                <img src="assets/img/news_image2.jpg" alt="Forest" width="600" height="300">
+            </a>
+            <div class="desc">Break-down</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image3.jpg">
+                <img src="assets/img/news_image3.jpg" alt="Northern Lights" width="600" height="300">
+            </a>
+            <div class="desc">Ella Odyssey</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image4.jpg">
+                <img src="assets/img/news_image4.jpg" alt="Mountains" width="600" height="300">
+            </a>
+            <div class="desc">NightMail Trains</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image4.jpg">
+                <img src="assets/img/news_image4.jpg" alt="Mountains" width="600" height="300">
+            </a>
+            <div class="desc">NightMail Trains</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <br>
+    <br>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <table style="width: 100%;" class="center">
+                <tr>
+                    <th style="text-align: center;"><button id="NewsUpdate" class="button button1"
+                            onclick="ViewBooking()">Back To Main Page</button></th>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("NewsUpdate").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">RailMate Lanka</div>
+                    <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
                         a variety of train services online. </p>
                 </div>
@@ -85,11 +154,13 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="news_update.html">News & Updates</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
