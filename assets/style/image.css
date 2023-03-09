@@ -58,6 +58,7 @@
         /*Image-gallery */
         div.gallery {
             border: 1px solid #ccc;
+            margin-bottom: 10px;
         }
 
         div.gallery:hover {
