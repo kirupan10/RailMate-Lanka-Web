@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/pricecalc.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <title>TrailMate - Reserve</title>
+    <link rel="stylesheet" href="assets/style/seat-reserve.css">
+
+    <title>TrailMate - Seat Reservation</title>
 </head>
 
 <body>
@@ -55,6 +57,27 @@
             <h4>Reserve Your Seat - Secure your place in the audience!</h4>
         </div>
     </div>
+
+    <center>
+        <!-- (A) SEAT LAYOUT -->
+        <div id="layout"></div>
+
+        <!-- (B) LEGEND -->
+        <div id="legend">
+            <div class="seat"></div>
+            <div class="txt">Available</div>
+            <div class="seat taken"></div>
+            <div class="txt">Taken</div>
+            <div class="seat selected"></div>
+            <div class="txt">Your Chosen Seats</div>
+        </div>
+
+        <!-- (C) SAVE SELECTION -->
+        <button id="save" onclick="reserve.save()">Reserve Seats</button>
+        <br><br>
+    </center>
+
+
     <!--footer-->
     <footer>
         <div class="content">
@@ -100,6 +123,7 @@
 <script type="text/javascript" src="assets/js/slider.js"> </script>
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
+<script src="assets/js/seat-reserve.js"></script>
 
 </html>
 </body>
