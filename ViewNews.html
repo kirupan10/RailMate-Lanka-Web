@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/style/footer.css">
 
     <!-- Title-Image-->
-    <title>TrailMate - About</title>
+    <title>TrailMate - News</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -30,13 +30,15 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo"><img src="assets/img/logo.png" alt=""> RailMate Lanka</div>
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
+            </div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="seat_reservation.html">Reservation</a> </li>
+                    <li><a href="SeatReservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -54,11 +56,11 @@
         </p>
     </div>
 
-    <!-- About-->
+    <!-- view news-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>RailMate Lanka</h2>
-            <h4>Onine based advanced Train Reservation System</h4>
+            <h2>Derailment Interrupts</h2>
+            <h4>Derailment interrupts train services on Northern Line</h4>
         </div>
     </div>
     <div class="section">
@@ -67,55 +69,53 @@
                 <div class="title">
                 </div>
                 <div class="content">
-                    <p style="font-size:1.5vw; padding: 20px;">A train reservation system is a digital platform that
-                        enables passengers
-                        to book train tickets
-                        and plan their travel itinerary in advance. It provides a user-friendly interface for users to
-                        search for train schedules, routes, and ticket availability.
+                    <p style="font-size:1.5vw; padding: 20px;">Minister of Transport and Highways Dr Bandula Gunawardena
+                        told Parliament today (28) that trains on the Northern railway
+                        line will end at Mahawa for a period of five months commencing 15th January 2023.
 
-                        The system typically requires users to provide their journey details, such as the departure and
-                        destination stations, date of travel, and the type of class they wish to travel in. Once the
-                        details are entered, the system displays a list of available trains along with their schedules
-                        and ticket prices.
+                        The Minister said that repairs to the railway line between Mahawa and Jaffna will commence on
+                        15th January and will be
+                        completed within a period of five months.
 
-                        Passengers can then select the train of their choice, select the class of travel, and make a
-                        payment using various payment options. The system then generates an e-ticket that can be printed
-                        or downloaded on the passenger's mobile device.
-
-                        The train reservation system also provides passengers with real-time updates on their train
-                        schedules, delays, cancellations, and other important information related to their journey. The
-                        system also enables users to cancel or modify their tickets if required.
-
-                        The system is typically managed by the railway authorities or a third-party service provider. It
-                        is designed to streamline the ticket booking process and make it more efficient, convenient, and
-                        hassle-free for passengers.
+                        <br><br>
+                        However, Mr. Gunasinghe also emphasized that the facilities will be provided for the commuters
+                        travelling to Jaffna, to
+                        travel from Anuradhapura to Jaffna by buses.
                     </p>
-                    <div class="button button1">
-                        <a href="">Read More</a>
-                    </div>
                     <br><br>
-                </div>
-                <div class="social">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
             <div class="image-section">
 
                 <img class="responsive_image_about" src="assets/abt.jpg">
-                <br><br>
             </div>
         </div>
     </div>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <table style="width: 100%;" class="center">
+                <tr>
+                    <th style="text-align: center;"><button id="ViewNews" class="button button1"
+                            onclick="ViewBooking()">Back To News Page</button></th>
+                </tr>
 
+
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("ViewNews").onclick = function () {
+            location.href = "NewsUpdate.html";
+        };
+    </script>
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">RailMate Lanka</div>
+                    <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
                         a variety of train services online. </p>
                 </div>
@@ -131,11 +131,13 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="news_update.html">News & Updates</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>

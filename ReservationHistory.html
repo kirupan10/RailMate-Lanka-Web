@@ -30,13 +30,15 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo"><img src="assets/img/logo.png" alt=""> RailMate Lanka</div>
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
+            </div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="seat_reservation.html">Reservation</a> </li>
+                    <li><a href="SeatReservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -44,30 +46,97 @@
         </nav>
     </div>
 
-    <!-- Notification-bar-->
-    <div class="notification-top-bar">
-        <p>Already have an account?
-            <small>
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </small>
-        </p>
-    </div>
+
 
     <!-- Booking-history-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
+            <h2>RailMate Lanka - Reservation History</h2>
+            <br>
+            <table style="width: 100%;" class="center">
+                <tr>
+                    <th>Reservation No</th>
+                    <th>Name</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>No of Seats</th>
+                    <th>Class</th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td>RW00372</td>
+                    <td>Kirupan Inpathas</td>
+                    <td>Jaffna</td>
+                    <td>Fort,Colombo</td>
+                    <td>4</td>
+                    <td>First</td>
+                    <th style="text-align: center;"><button id="bookingView1" class="button button4">View</button>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>RW00258</td>
+                    <td>Kirupan Inpathas</td>
+                    <td>Colombo</td>
+                    <td>Matara</td>
+                    <td>2</td>
+                    <td>Second</td>
+                    <th style="text-align: center;"><button id="bookingView2" class="button button4"
+                            onclick="BookingHistory">View</button></th>
+                </tr>
+
+                <tr>
+                    <td>RW00189</td>
+                    <td>Kirupan Inpathas</td>
+                    <td>Colombo</td>
+                    <td>Vavuniya</td>
+                    <td>1</td>
+                    <td>First</td>
+                    <th style="text-align: center;"><button id="bookingView3" class="button button4">View</button></th>
+
+                </tr>
+            </table>
         </div>
     </div>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <table style="width: 100%;" class="center">
+                <tr>
+                    <th style="text-align: center;"><button id="Pricing" class="button button1"
+                            onclick="ViewBooking()">Back
+                            To Profile Page</button></th>
+                </tr>
 
+
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("Pricing").onclick = function () {
+            location.href = "profile.html";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("bookingView1").onclick = function () {
+            location.href = "ViewReservation.html";
+        };
+        document.getElementById("bookingView2").onclick = function () {
+            location.href = "ViewReservation.html";
+        };
+        document.getElementById("bookingView3").onclick = function () {
+            location.href = "ViewReservation.html";
+        };
+    </script>
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">RailMate Lanka</div>
+                    <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
                         a variety of train services online. </p>
                 </div>
@@ -83,11 +152,13 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="news_update.html">News & Updates</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -108,5 +179,6 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
+<script type="text/javascript" src="assets/js/onclick.js"></script>
 
 </html>
