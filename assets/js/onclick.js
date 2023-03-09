@@ -4,7 +4,7 @@ document.getElementById("logout").onclick = function () {
     location.href = "index.html";
 };
 document.getElementById("ViewBooking").onclick = function () {
-    location.href = "booking_history.html";
+    location.href = "ReservationHistory.html";
 };
 
 

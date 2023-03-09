@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <link rel="stylesheet" href="assets/style/seat-reserve.css">
+    <link rel="stylesheet" href="assets/style/pricecalc.css">
     <!-- Title-Image-->
-    <title>TrailMate - Seat Reservation</title>
+    <title>TrailMate - Profile</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -39,7 +39,7 @@
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="seat_reservation.html">Reservation</a> </li>
+                    <li><a href="SeatReservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -47,44 +47,47 @@
         </nav>
     </div>
 
-    <!-- Notification-bar-->
-    <div class="notification-top-bar">
-        <p>Already have an account?
-            <small>
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </small>
-        </p>
-    </div>
-
-    <!-- Seat-Reservation-->
+    <!-- profile-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <h2>Update Your Personal Information</h2>
+            <img src="assets/img/avatar.png" alt="Avatar woman">
+            <br><br>
+
+            <table style="width: 80%;" class="center">
+                <tr>
+                    <th>Full Name</th>
+                    <th><input type="text" id="FullName" required></th>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
+                </tr>
+
+                <tr>
+                    <th style="text-align: center;"><button id="updateFullname" class="button button2"
+                            onclick="ViewBooking()">Update Fullname</button></th>
+                    <th style="text-align: center;"><button id="cancel" class="button button3"
+                            onclick="cancel()">Cancel</button></th>
+                </tr>
+
+            </table>
         </div>
     </div>
-
-    <center>
-        <!-- (A) SEAT LAYOUT -->
-        <div id="layout"></div>
-
-        <!-- (B) LEGEND -->
-        <div id="legend">
-            <div class="seat"></div>
-            <div class="txt">Available</div>
-            <div class="seat taken"></div>
-            <div class="txt">Taken</div>
-            <div class="seat selected"></div>
-            <div class="txt">Your Chosen Seats</div>
-        </div>
-
-        <!-- (C) SAVE SELECTION -->
-        <button id="save" onclick="reserve.save()">Reserve Seats</button>
-        <br><br>
-    </center>
-
-
+    <script type="text/javascript">
+        document.getElementById("updateFullname").onclick = function () {
+            let FullName = document.getElementById("FullName").value;
+            if(FullName != ""){
+                alert("FullName updated...");
+                location.href = "profile.html";
+            }else{
+                document.getElementById("errorShow").innerHTML = "Must fill the name";
+            }
+            
+        };
+        document.getElementById("cancel").onclick = function () {
+            location.href = "profile.html";
+        };
+    </script>
     <!--footer-->
     <footer>
         <div class="content">
@@ -108,12 +111,13 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
+                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="news_update.html">News & Updates</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
                 <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -134,6 +138,5 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
-<script type="text/javascript" src="assets/js/seat-reserve.js"></script>
 
 </html>
