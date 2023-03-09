@@ -139,3 +139,9 @@ html {
 .button1 {
     padding: 10px 24px;
 }
+
+/* Responsive images about*/
+.responsive_image_about {
+    width: 100%;
+    height: auto;
+}
