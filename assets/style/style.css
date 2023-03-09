@@ -125,7 +125,7 @@ html {
 /* button */
 
 .button {
-    background-color: #4CAF50;
+
     /* Green */
     border: none;
     color: white;
@@ -139,10 +139,52 @@ html {
 
 .button1 {
     padding: 10px 24px;
+    background-color: #4CAF50;
+}
+
+.button2 {
+    padding: 10px 24px;
+    background-color: blue;
+}
+
+.button3 {
+    padding: 10px 24px;
+    background-color: red;
+}
+
+.button4 {
+    padding: 10px 40px;
+    background-color: grey;
 }
 
 /* Responsive images about*/
 .responsive_image_about {
     width: 100%;
     height: auto;
+}
+
+
+table,
+th,
+td {
+
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
