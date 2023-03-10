@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <link rel="stylesheet" href="assets/style/seat-reserve.css">
-    <link rel="stylesheet" href="assets/style/pricecalc.css">
+
     <!-- Title-Image-->
-    <title>TrailMate - Seat Reservation</title>
+    <title>TrailMate - Trains</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -58,33 +57,83 @@
         </p>
     </div>
 
-    <!-- Seat-Reservation-->
+    <!-- Booking-history-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
+            <h2>RailMate Lanka - Trains</h2>
+            <br>
+            <table style="width: 100%;" class="center">
+                <tr>
+                    <th>Train Name</th>
+                    <th>Train Number</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Class</th>
+                </tr>
+
+                <tr>
+                    <td>Yazh Devi</td>
+                    <td>TRSL765</td>
+                    <td>Jaffna</td>
+                    <td>Colombo</td>
+                    <td>06.00 AM </td>
+                    <td>06.00 PM</td>
+                    <td>All Available</td>
+                    <th style="text-align: center;"><button id="Train01" class="button button4">Select</button>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>Yazh Devi</td>
+                    <td>TRSL765</td>
+                    <td>Jaffna</td>
+                    <td>Colombo</td>
+                    <td>06.00 AM </td>
+                    <td>06.00 PM</td>
+                    <td>All Available</td>
+                    <th style="text-align: center;"><button id="Train02" class="button button4">Select</button>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>Yazh Devi</td>
+                    <td>TRSL765</td>
+                    <td>Jaffna</td>
+                    <td>Colombo</td>
+                    <td>06.00 AM </td>
+                    <td>06.00 PM</td>
+                    <td>All Available</td>
+                    <th style="text-align: center;"><button id="Train03" class="button button4">Select</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="8" style="text-align: center;"><button id="SelectTrain" class="button button1"
+                            onclick="ViewBooking()">Back To Main Page</button></th>
+                </tr>
+
+
+            </table>
         </div>
     </div>
 
-    <center>
-        <!-- (A) SEAT LAYOUT -->
-        <div id="layout"></div>
+    <script type="text/javascript">
+        document.getElementById("Train01").onclick = function () {
+            location.href = "SeatReservation.html";
+        };
+        document.getElementById("Train02").onclick = function () {
+            location.href = "SeatReservation.html";
+        };
+        document.getElementById("Train03").onclick = function () {
+            location.href = "SeatReservation.html";
+        };
 
-        <!-- (B) LEGEND -->
-        <div id="legend">
-            <div class="seat"></div>
-            <div class="txt">Available</div>
-            <div class="seat taken"></div>
-            <div class="txt">Taken</div>
-            <div class="seat selected"></div>
-            <div class="txt">Your Chosen Seats</div>
-        </div>
-
-        <!-- (C) SAVE SELECTION -->
-        <button id="save" onclick="reserve.save()">Reserve Seats</button>
-        <br><br>
-    </center>
-
+        document.getElementById("SelectTrain").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
 
     <!--footer-->
     <footer>
@@ -116,7 +165,6 @@
                 <div><a href="faq.html">FAQ</a></div>
                 <div><a href="profile.html">Dashboard</a></div>
                 <div><a href="trains.html">Trains List</a></div>
-
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -137,6 +185,5 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
-<script type="text/javascript" src="assets/js/seat-reserve.js"></script>
 
 </html>

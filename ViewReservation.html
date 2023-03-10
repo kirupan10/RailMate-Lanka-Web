@@ -30,7 +30,7 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-             <div class="logo">
+            <div class="logo">
                 <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
             </div>
             <!-- NAVIGATION MENU -->
@@ -96,16 +96,17 @@
                 </tr>
 
                 <tr>
-                    <th colspan="2" style="text-align: center;"><button id="ViewBooking" class="button button3"
-                            onclick="ViewBooking()">Delete My Booking History</button></th>
+                    <th colspan="2" style="text-align: center;"><button id="ViewBooking" class="button button1"
+                            onclick="ViewBooking()">Back To Main Page</button></th>
+                </tr>
 
             </table>
         </div>
     </div>
     <script type="text/javascript">
         document.getElementById("ViewBooking").onclick = function () {
-            alert("Deleting your records...");
-            location.href = "booking_history.html";
+
+            location.href = "index.html";
         };
     </script>
 
