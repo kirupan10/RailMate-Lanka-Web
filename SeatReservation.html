@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
     <link rel="stylesheet" href="assets/style/seat-reserve.css">
+    <link rel="stylesheet" href="assets/style/pricecalc.css">
     <!-- Title-Image-->
     <title>TrailMate - Seat Reservation</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
@@ -60,10 +61,49 @@
     <!-- Seat-Reservation-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
+            <h2>RailMate Lanka - Trains Availability</h2>
+            <br>
+            <br>
+
+            <table style="width: 80%;" class="center">
+                <tr>
+                    <th>Full Name</th>
+                    <td> <input type="text" id="FullNameReservation" required></td>
+                </tr>
+
+                <tr>
+                    <th>Phone Number</th>
+                    <td> <input type="number" id="PhoneNumberReservation" required></td>
+                </tr>
+
+                <tr>
+                    <th>Address</th>
+                    <td><input type="text" id="AddressReservation" required></td>
+                </tr>
+
+                <tr>
+                    <th>NIC Number</th>
+                    <td><input type="text" id="NICReservation" required></td>
+                </tr>
+
+
+                </tr>
+
+
+                <tr>
+                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
+                </tr>
+                
+
+            </table>
         </div>
     </div>
+    <script type="text/javascript">
+        document.getElementById("cancel").onclick = function () {
+            location.href = "profile.html";
+        };
+    </script>
 
     <center>
         <!-- (A) SEAT LAYOUT -->

@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+
     <!-- Title-Image-->
-    <title>TrailMate - Preview</title>
+    <title>TrailMate - Trains</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -46,66 +47,90 @@
         </nav>
     </div>
 
+    <!-- Notification-bar-->
+    <div class="notification-top-bar">
+        <p>Already have an account?
+            <small>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </small>
+        </p>
+    </div>
 
-    <!-- Booking-Preview-->
+    <!-- Booking-history-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
             <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
-            <h2>RailMate Lanka - View Reservation</h2>
-            <br><br>
-
-            <table style="width: 80%;" class="center">
+            <h2>RailMate Lanka - Trains</h2>
+            <br>
+            <table style="width: 100%;" class="center">
                 <tr>
-                    <th>Reservation No</th>
-                    <td>RW00372</td>
-                </tr>
-
-                <tr>
-                    <th>Name</th>
-                    <td>Kirupan Inpathas</td>
-                </tr>
-
-                <tr>
-                    <th>Phone Number</th>
-                    <td>0770221046</td>
-                </tr>
-
-                <tr>
-                    <th>From</th>
-                    <td>Jaffna</td>
-                </tr>
-
-                <tr>
-                    <th>To</th>
-                    <td>Colombo</td>
-                </tr>
-
-                <tr>
-                    <th>No of Seats</th>
-                    <td>4</td>
-                </tr>
-
-                <tr>
+                    <th>Train Name</th>
+                    <th>Train Number</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
                     <th>Class</th>
-                    <td>First</td>
                 </tr>
 
                 <tr>
-                    <th>Date</th>
-                    <td>24.03.2023</td>
+                    <td>Yazh Devi</td>
+                    <td>TRSL765</td>
+                    <td>Jaffna</td>
+                    <td>Colombo</td>
+                    <td>06.00 AM </td>
+                    <td>06.00 PM</td>
+                    <td>All Available</td>
+                    <th style="text-align: center;"><button id="Train01" class="button button4">Select</button>
+                    </th>
                 </tr>
 
                 <tr>
-                    <th colspan="2" style="text-align: center;"><button id="ViewBooking" class="button button1"
+                    <td>Yazh Devi</td>
+                    <td>TRSL765</td>
+                    <td>Jaffna</td>
+                    <td>Colombo</td>
+                    <td>06.00 AM </td>
+                    <td>06.00 PM</td>
+                    <td>All Available</td>
+                    <th style="text-align: center;"><button id="Train02" class="button button4">Select</button>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>Yazh Devi</td>
+                    <td>TRSL765</td>
+                    <td>Jaffna</td>
+                    <td>Colombo</td>
+                    <td>06.00 AM </td>
+                    <td>06.00 PM</td>
+                    <td>All Available</td>
+                    <th style="text-align: center;"><button id="Train03" class="button button4">Select</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="8" style="text-align: center;"><button id="SelectTrain" class="button button1"
                             onclick="ViewBooking()">Back To Main Page</button></th>
                 </tr>
+
 
             </table>
         </div>
     </div>
-    <script type="text/javascript">
-        document.getElementById("ViewBooking").onclick = function () {
 
+    <script type="text/javascript">
+        document.getElementById("Train01").onclick = function () {
+            location.href = "SeatReservation.html";
+        };
+        document.getElementById("Train02").onclick = function () {
+            location.href = "SeatReservation.html";
+        };
+        document.getElementById("Train03").onclick = function () {
+            location.href = "SeatReservation.html";
+        };
+
+        document.getElementById("SelectTrain").onclick = function () {
             location.href = "index.html";
         };
     </script>

@@ -38,27 +38,26 @@ var reserve = {
     // (C1) GET SELECTED SEATS
     let selected = document.querySelectorAll("#layout .selected");
 
+    let FullNameReservation = document.getElementById("FullNameReservation").value;
+    let PhoneNumberReservation = document.getElementById("PhoneNumberReservation").value;
+    let AddressReservation = document.getElementById("AddressReservation").value;
+    let NICReservation = document.getElementById("NICReservation").value;
+    let errorShow = "";
+
     // (C2) ERROR!
-    if (selected.length == 0) { alert("No seats selected."); }
+    if (FullNameReservation != "" && PhoneNumberReservation != "" && AddressReservation != "" && NICReservation != "") {
+      if (selected.length == 0) {
+        errorShow += "No seats selected.!<br>";
+        
+      } else {
+        location.href = "ViewReservation.html";
+      }
 
-    // (C3) SELECTED SEATS
-    else {
-      // (C3-1) GET SELECTED SEAT NUMBERS
-      let seats = [];
-      for (let s of selected) { seats.push(s.innerHTML); }
+    } else {
+      errorShow += "Must fill all the field in this form.!";
 
-      // (C3-2) DO SOMETHING WITH IT...
-      let data = new FormData();
-      data.append("seats", JSON.stringify(seats));
-      data.append("name", "JON DOE");
-      data.append("email", "JON@DOE.COM");
-      fetch("4-dummy.php", {
-        method: "POST",
-        body: data
-      })
-        .then(res => res.text())
-        .then(txt => console.log(txt));
     }
+    document.getElementById("errorShow").innerHTML = errorShow;
   }
 };
 window.addEventListener("DOMContentLoaded", reserve.init);

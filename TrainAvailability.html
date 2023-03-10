@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+    <link rel="stylesheet" href="assets/style/pricecalc.css">
     <!-- Title-Image-->
-    <title>TrailMate - Preview</title>
+    <title>TrailMate - Profile</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -46,70 +47,95 @@
         </nav>
     </div>
 
-
-    <!-- Booking-Preview-->
+    <!-- Trains Availability-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
             <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
-            <h2>RailMate Lanka - View Reservation</h2>
-            <br><br>
+            <h2>RailMate Lanka - Trains Availability</h2>
+            <br>
+            <br>
 
             <table style="width: 80%;" class="center">
                 <tr>
-                    <th>Reservation No</th>
-                    <td>RW00372</td>
-                </tr>
-
-                <tr>
-                    <th>Name</th>
-                    <td>Kirupan Inpathas</td>
-                </tr>
-
-                <tr>
-                    <th>Phone Number</th>
-                    <td>0770221046</td>
-                </tr>
-
-                <tr>
                     <th>From</th>
-                    <td>Jaffna</td>
+                    <td>
+                        <select id="FromLocation" name="FromWhere">
+                            <option value="jaffna">Jaffna</option>
+                            <option value="kilinochchi">Kilinochchi</option>
+                            <option value="vavuniya">Vavuniya</option>
+                        </select>
+                    </td>
                 </tr>
 
                 <tr>
                     <th>To</th>
-                    <td>Colombo</td>
-                </tr>
-
-                <tr>
-                    <th>No of Seats</th>
-                    <td>4</td>
+                    <td>
+                        <select id="ToLocation" name="FromWhere">
+                            <option value="jaffna">Jaffna</option>
+                            <option value="kilinochchi">Kilinochchi</option>
+                            <option value="vavuniya">Vavuniya</option>
+                        </select>
+                    </td>
                 </tr>
 
                 <tr>
                     <th>Class</th>
-                    <td>First</td>
+                    <td>
+                        <select id="TrainClass" name="FromWhere">
+                            <option value="FirstClass">First</option>
+                            <option value="SecondClass">Second</option>
+                            <option value="ThirdClass">Third</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Seats</th>
+                    <td> <input type="number" id="SeatReservation" required></td>
                 </tr>
 
                 <tr>
                     <th>Date</th>
-                    <td>24.03.2023</td>
+                    <th><input type="date" id="DateReservation" required></th>
+                </tr>
+                <tr>
+
+
+                </tr>
+
+
+                <tr>
+                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
                 </tr>
 
                 <tr>
-                    <th colspan="2" style="text-align: center;"><button id="ViewBooking" class="button button1"
-                            onclick="ViewBooking()">Back To Main Page</button></th>
+                    <th style="text-align: center;"><button id="updateFullname" class="button button2"
+                            onclick="ViewBooking()">Check Availability</button></th>
+                    <th style="text-align: center;"><button id="cancel" class="button button3"
+                            onclick="cancel()">Cancel</button></th>
                 </tr>
 
             </table>
         </div>
     </div>
     <script type="text/javascript">
-        document.getElementById("ViewBooking").onclick = function () {
+        document.getElementById("updateFullname").onclick = function () {
+            let ToLocation = document.getElementById("ToLocation").value;
+            let FromLocation = document.getElementById("FromLocation").value;
+            let TrainClass = document.getElementById("TrainClass").value;
+            let SeatReservation = document.getElementById("SeatReservation").value;
+            let DateReservation = document.getElementById("DateReservation").value;
+            if (ToLocation != "" && FromLocation != "" && TrainClass != "" && SeatReservation != "" && DateReservation != "") {
+                location.href = "SelectTrain.html";
+            } else {
+                document.getElementById("errorShow").innerHTML = "Must fill all the field in this form";
+            }
 
-            location.href = "index.html";
+        };
+        document.getElementById("cancel").onclick = function () {
+            location.href = "profile.html";
         };
     </script>
-
     <!--footer-->
     <footer>
         <div class="content">
