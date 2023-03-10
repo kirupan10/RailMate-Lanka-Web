@@ -13,11 +13,9 @@
     <link rel="stylesheet" href="assets/style/notify_bar.css">
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
-    <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <link rel="stylesheet" href="assets/style/seat-reserve.css">
-    <link rel="stylesheet" href="assets/style/pricecalc.css">
+
     <!-- Title-Image-->
-    <title>TrailMate - Seat Reservation</title>
+    <title>TrailMate - News</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -58,34 +56,58 @@
         </p>
     </div>
 
-    <!-- Seat-Reservation-->
+    <!-- view news-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <h2>Derailment Interrupts</h2>
+            <h4>Derailment interrupts train services on Northern Line</h4>
         </div>
     </div>
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                </div>
+                <div class="content">
+                    <p style="font-size:1.5vw; padding: 20px;">Minister of Transport and Highways Dr Bandula Gunawardena
+                        told Parliament today (28) that trains on the Northern railway
+                        line will end at Mahawa for a period of five months commencing 15th January 2023.
 
-    <center>
-        <!-- (A) SEAT LAYOUT -->
-        <div id="layout"></div>
+                        The Minister said that repairs to the railway line between Mahawa and Jaffna will commence on
+                        15th January and will be
+                        completed within a period of five months.
 
-        <!-- (B) LEGEND -->
-        <div id="legend">
-            <div class="seat"></div>
-            <div class="txt">Available</div>
-            <div class="seat taken"></div>
-            <div class="txt">Taken</div>
-            <div class="seat selected"></div>
-            <div class="txt">Your Chosen Seats</div>
+                        <br><br>
+                        However, Mr. Gunasinghe also emphasized that the facilities will be provided for the commuters
+                        travelling to Jaffna, to
+                        travel from Anuradhapura to Jaffna by buses.
+                    </p>
+                    <br><br>
+                </div>
+            </div>
+            <div class="image-section">
+
+                <img class="responsive_image_about" src="assets/abt.jpg">
+            </div>
         </div>
+    </div>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <table style="width: 100%;" class="center">
+                <tr>
+                    <th style="text-align: center;"><button id="ViewNews" class="button button1"
+                            onclick="ViewBooking()">Back To News Page</button></th>
+                </tr>
 
-        <!-- (C) SAVE SELECTION -->
-        <button id="save" onclick="reserve.save()">Reserve Seats</button>
-        <br><br>
-    </center>
 
-
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("ViewNews").onclick = function () {
+            location.href = "NewsUpdate.html";
+        };
+    </script>
     <!--footer-->
     <footer>
         <div class="content">
@@ -116,7 +138,6 @@
                 <div><a href="faq.html">FAQ</a></div>
                 <div><a href="profile.html">Dashboard</a></div>
                 <div><a href="trains.html">Trains List</a></div>
-
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -137,6 +158,5 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
-<script type="text/javascript" src="assets/js/seat-reserve.js"></script>
 
 </html>

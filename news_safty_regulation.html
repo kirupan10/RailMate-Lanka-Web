@@ -13,11 +13,9 @@
     <link rel="stylesheet" href="assets/style/notify_bar.css">
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
-    <link rel="stylesheet" href="assets/style/news_img_shadow.css">
-    <link rel="stylesheet" href="assets/style/seat-reserve.css">
-    <link rel="stylesheet" href="assets/style/pricecalc.css">
+
     <!-- Title-Image-->
-    <title>TrailMate - Seat Reservation</title>
+    <title>TrailMate - About</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -32,15 +30,13 @@
     <!-- Menu-bar -->
     <div>
         <nav class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
-            </div>
+            <div class="logo"><img src="assets/img/logo.png" alt=""> RailMate Lanka</div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="SeatReservation.html">Reservation</a> </li>
+                    <li><a href="seat_reservation.html">Reservation</a> </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </div>
@@ -58,42 +54,76 @@
         </p>
     </div>
 
-    <!-- Seat-Reservation-->
+    <!-- About-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Reserve your seats.!!</h2>
-            <h4>Reserve Your Seat - Secure your place in the audience!</h4>
+            <h1>RailMate Lanka</h1>
+            <h4>Onine based advanced Train Reservation System</h4>
+            <h2>Safe and Comfortable</h2>
+
         </div>
     </div>
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                </div>
+                <div class="content">
+                    <p style="font-size:1.5vw; padding: 20px;">
+                        Great reason to choose train travel is that the majority of train carriers have implemented additional regulations to protect travelers' health and safety.
+                         If you plan to travel onboard a train, we advise you to familiarize yourself with them before boarding the train to make the traveling experience smoother. 
+                         You should also consider booking your trip first-class to reduce human contact, protect yourself as well as others and travel comfortably!
+                         <br>
+                        <b>Common safety regulations for train travel:</b>
 
-    <center>
-        <!-- (A) SEAT LAYOUT -->
-        <div id="layout"></div>
+                         <ul style="font-size:1.5vw; padding: 20px; align-items: baseline; list-style-type: disc;">
+                            <li>Book your tickets in advance to secure your preferred seat and avoid last-minute rush.</li>
 
-        <!-- (B) LEGEND -->
-        <div id="legend">
-            <div class="seat"></div>
-            <div class="txt">Available</div>
-            <div class="seat taken"></div>
-            <div class="txt">Taken</div>
-            <div class="seat selected"></div>
-            <div class="txt">Your Chosen Seats</div>
+                            <li>Research the train route and schedule ahead of time to plan your trip accordingly.</li>
+
+                            <li>Pack light and bring only essential items to avoid hassle and inconvenience.</li>
+
+                            <li>Arrive at the station early to allow time for security checks and boarding.</li>
+
+                            <li>Wear comfortable clothing and footwear for the journey.</li>
+
+                            <li>Keep your valuables, such as passports and money, in a secure place like a money belt or a hidden compartment.</li>
+
+                            <li>Stay hydrated and bring snacks or food for the journey, especially if it's a long one.</li>
+
+                            <li>Follow safety protocols and regulations, such as wearing a mask and practicing social distancing.</li>
+
+                            <li>If you're traveling overnight, consider booking a sleeper or recliner coach for added comfort.</li>
+
+                            <li>Stay alert and aware of your surroundings at all times, and report any suspicious behavior or activity to the authorities immediately.</li>
+                         </ul>
+                    </p>
+                    <div class="button button1">
+                        <a href="">Read More</a>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+
+                <img class="responsive_image_about" src="assets/abt.jpg">
+                <br><br>
+            </div>
         </div>
-
-        <!-- (C) SAVE SELECTION -->
-        <button id="save" onclick="reserve.save()">Reserve Seats</button>
-        <br><br>
-    </center>
-
+    </div>
 
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                    <div class="topic">
-                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
-                    </div>
+                    <div class="topic">RailMate Lanka</div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
                         a variety of train services online. </p>
                 </div>
@@ -109,14 +139,11 @@
             </div>
             <div class="middle box">
                 <div class="topic">Our Services</div>
-                <div><a href="SeatReservation.html">Online Train Reservation</a></div>
+                <div><a href="seat_reservation.html">Online Train Reservation</a></div>
                 <div><a href="pricing.html">Price Calculation</a></div>
                 <div><a href="conditions.html">Terms & Conditions</a></div>
-                <div><a href="NewsUpdate.html">News & Updates</a></div>
+                <div><a href="news_update.html">News & Updates</a></div>
                 <div><a href="faq.html">FAQ</a></div>
-                <div><a href="profile.html">Dashboard</a></div>
-                <div><a href="trains.html">Trains List</a></div>
-
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -137,6 +164,5 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
-<script type="text/javascript" src="assets/js/seat-reserve.js"></script>
 
 </html>
