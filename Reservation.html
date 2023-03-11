@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+    <link rel="stylesheet" href="assets/style/seat-reserve.css">
     <link rel="stylesheet" href="assets/style/pricecalc.css">
     <!-- Title-Image-->
-    <title>TrailMate - Pricing</title>
+    <title>TrailMate - Seat Reservation</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -47,109 +48,93 @@
         </nav>
     </div>
 
-    <!-- Notification-bar-->
-    <div class="notification-top-bar">
-        <p>Already have an account?
-            <small>
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
-            </small>
-        </p>
-    </div>
-
-    <!--price calc-->
+    <!-- Reservation-->
     <div class="header" id="myHeader">
         <div class="image-gallery"><img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
-            <h2>RailMate Lanka - Reservation History</h2>
+            <h2>RailMate Lanka - Reservation</h2>
             <br>
             <br><br>
-            <form name="myForm" onsubmit="return validateForm()" method="post">
-                <table style="width: 80%;" class="center">
-                    <tr>
-                        <th>From</th>
-                        <th><select id="FromWhere" name="FromWhere">
-                                <option selected value="jaffna">Jaffna</option>
-                                <option value="kilinochchi">Kilinochchi</option>
-                                <option value="vavuniya">Vavuniya</option>
-                                <option value="Colombo">Colombo</option>
-                                <option value="Kandy">Kandy</option>
-                                <option value="Matale">Matale</option>
-                                <option value="Anuradhapura">Anuradhapura</option>
-                                <option value="Hatton">Hatton</option>
-                                <option value="Trincomalee">Trincomalee</option>
-                                <option value="Haputale">Haputale</option>
-                                <option value="Badulla">Badulla</option>
-                            </select></th>
-                    </tr>
-
-                    <tr>
-                        <th>To</th>
-                        <th><select id="ToWhere" name="ToWhere">
-                                <option value="jaffna">Jaffna</option>
-                                <option value="kilinochchi">Kilinochchi</option>
-                                <option value="vavuniya">Vavuniya</option>
-                                <option selected value="Colombo">Colombo</option>
-                                <option value="Kandy">Kandy</option>
-                                <option value="Matale">Matale</option>
-                                <option value="Anuradhapura">Anuradhapura</option>
-                                <option value="Hatton">Hatton</option>
-                                <option value="Trincomalee">Trincomalee</option>
-                                <option value="Haputale">Haputale</option>
-                                <option value="Badulla">Badulla</option>
-                            </select></th>
-                    </tr>
-
-                    <tr>
-                        <th>How many seats:</th>
-                        <th><input type="number" id="seatno" name="seatno"></th>
-                    </tr>
-
-                    <tr>
-                        <th>Class</th>
-                        <th><select id="class" name="class">
-                                <option value="FirstClass">First</option>
-                                <option value="SecondClass">Second</option>
-                                <option value="ThirdClass">Third</option>
-                            </select></th>
-                    </tr>
-
-                    <tr>
-                        <th colspan="2" style="text-align: center;"><button id="ViewBooking"
-                                class="button button2">Search &
-                                Availablity </button></th>
-
-                    </tr>
-            </form>
-            </table>
-        </div>
-    </div>
-    <!--Payments method-->
-    <div>
-        <div class="header" id="myHeader">
-            <div class="image-gallery">
-                <h2>Acceptable Payment</h2>
-                <h4>Secure and Convenient Payments - Accepted Everywhere!</h4>
-            </div>
-        </div>
-        <img src="assets/img/payment.jpg" alt="Payments" width="100%">
-    </div>
-    <br>
-    <br>
-    <div class="header" id="myHeader">
-        <div class="image-gallery">
-            <table style="width: 100%;" class="center">
+            <table style="width: 80%;" class="center">
                 <tr>
-                    <th style="text-align: center;"><button id="Pricing" class="button button1"
-                            onclick="ViewBooking()">Back To Main Page</button></th>
+                    <th>From</th>
+                    <th><select id="FromWhere" name="FromWhere">
+                            <option selected value="jaffna">Jaffna</option>
+                            <option value="kilinochchi">Kilinochchi</option>
+                            <option value="vavuniya">Vavuniya</option>
+                            <option value="Colombo">Colombo</option>
+                            <option value="Kandy">Kandy</option>
+                            <option value="Matale">Matale</option>
+                            <option value="Anuradhapura">Anuradhapura</option>
+                            <option value="Hatton">Hatton</option>
+                            <option value="Trincomalee">Trincomalee</option>
+                            <option value="Haputale">Haputale</option>
+                            <option value="Badulla">Badulla</option>
+                        </select></th>
+                </tr>
+
+                <tr>
+                    <th>To</th>
+                    <th><select id="ToWhere" name="ToWhere">
+                            <option value="jaffna">Jaffna</option>
+                            <option value="kilinochchi">Kilinochchi</option>
+                            <option value="vavuniya">Vavuniya</option>
+                            <option selected value="Colombo">Colombo</option>
+                            <option value="Kandy">Kandy</option>
+                            <option value="Matale">Matale</option>
+                            <option value="Anuradhapura">Anuradhapura</option>
+                            <option value="Hatton">Hatton</option>
+                            <option value="Trincomalee">Trincomalee</option>
+                            <option value="Haputale">Haputale</option>
+                            <option value="Badulla">Badulla</option>
+                        </select></th>
+                </tr>
+
+                <tr>
+                    <th>How many seats:</th>
+                    <th><input type="number" id="seatno" name="seatno"></th>
+                </tr>
+
+                <tr>
+                    <th>Class</th>
+                    <th><select id="class" name="class">
+                            <option value="FirstClass">First</option>
+                            <option value="SecondClass">Second</option>
+                            <option value="ThirdClass">Third</option>
+                        </select></th>
+                </tr>
+
+                <tr>
+                    <td>Total Cost </td>
+                    <td><b>
+                            <p id="Cost"></p>
+                        </b>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center; color: red;" id="errorShow"></td>
                 </tr>
 
 
+                <tr>
+                    <td style="text-align: center;"><!-- (C) SAVE SELECTION -->
+                        <button class="button button1" onclick="reserve.save()">Check Prices</button>
+                    </td>
+                    <td style="text-align: center;"><!-- (C) SAVE SELECTION -->
+                        <button id="Reserve" class="button button2" onclick="reserve.cost()">Reserve Seats</button>
+                    </td>
+
+                </tr>
+
             </table>
         </div>
     </div>
+
     <script type="text/javascript">
-        document.getElementById("Pricing").onclick = function () {
-            location.href = "index.html";
+        document.getElementById("Reserve").onclick = function () {
+            location.href = "SelectTrain.html";
         };
     </script>
     <!--footer-->
@@ -182,6 +167,7 @@
                 <div><a href="faq.html">FAQ</a></div>
                 <div><a href="profile.html">Dashboard</a></div>
                 <div><a href="trains.html">Trains List</a></div>
+
             </div>
             <div class="right box">
                 <div class="topic">Subscribe us</div>
@@ -202,5 +188,6 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
+<script type="text/javascript" src="assets/js/ReservationJs.js"></script>
 
 </html>

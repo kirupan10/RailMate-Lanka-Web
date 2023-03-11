@@ -50,7 +50,7 @@ var reserve = {
         errorShow += "No seats selected.!<br>";
         
       } else {
-        location.href = "ViewReservation.html";
+        location.href = "checkout.html";
       }
 
     } else {
