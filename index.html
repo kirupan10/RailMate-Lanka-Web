@@ -66,73 +66,74 @@
             <h1 style="font-size:50px">RailMate Lanka</h1>
             <br>
             <p> Onine based advanced Train Reservation System</p>
-            <a class="button button1" href="seat_reservation.html">Reserve your seats</a>
+            <a class="button button1" href="Reservation.html">Reserve your seats</a>
         </div>
     </div>
 
     <!--price calc-->
-    <div>
-        <div class="header" id="myHeader">
-            <div class="image-gallery">
-                <h2>Price Calc</h2>
-                <h4>Accurate Price Calculations to Maximize Your Savings!</h4>
-            </div>
-        </div>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <h2>Price Calculation</h2>
+            <h4>Accurate Price Calculations to Maximize Your Savings!</h4>
+            <br>
+            <br><br>
+                <table style="width: 80%;" class="center">
+                    <tr>
+                        <th>From</th>
+                        <th><select id="FromWhere" name="FromWhere">
+                                <option selected value="jaffna">Jaffna</option>
+                                <option value="kilinochchi">Kilinochchi</option>
+                                <option value="vavuniya">Vavuniya</option>
+                                <option value="Colombo">Colombo</option>
+                                <option value="Kandy">Kandy</option>
+                                <option value="Matale">Matale</option>
+                                <option value="Anuradhapura">Anuradhapura</option>
+                                <option value="Hatton">Hatton</option>
+                                <option value="Trincomalee">Trincomalee</option>
+                                <option value="Haputale">Haputale</option>
+                                <option value="Badulla">Badulla</option>
+                            </select></th>
+                    </tr>
 
-        <div class="container">
-            <form name="myForm" onsubmit="return validateForm()" method="post">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="">From Where:</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="FromWhere" name="FromWhere">
-                            <option value="jaffna">Jaffna</option>
-                            <option value="kilinochchi">Kilinochchi</option>
-                            <option value="vavuniya">Vavuniya</option>
-                        </select>
-                    </div>
-                </div>
+                    <tr>
+                        <th>To</th>
+                        <th><select id="ToWhere" name="ToWhere">
+                                <option value="jaffna">Jaffna</option>
+                                <option value="kilinochchi">Kilinochchi</option>
+                                <option value="vavuniya">Vavuniya</option>
+                                <option selected value="Colombo">Colombo</option>
+                                <option value="Kandy">Kandy</option>
+                                <option value="Matale">Matale</option>
+                                <option value="Anuradhapura">Anuradhapura</option>
+                                <option value="Hatton">Hatton</option>
+                                <option value="Trincomalee">Trincomalee</option>
+                                <option value="Haputale">Haputale</option>
+                                <option value="Badulla">Badulla</option>
+                            </select></th>
+                    </tr>
 
-                <div class="row">
-                    <div class="col-25">
-                        <label for="">To Where:</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="ToWhere" name="ToWhere">
-                            <option value="jaffna">Jaffna</option>
-                            <option value="kilinochchi">Kilinochchi</option>
-                            <option value="vavuniya">Vavuniya</option>
-                            <option selected value="colombo">Colombo</option>
-                        </select>
-                    </div>
-                </div>
+                    <tr>
+                        <th>How many seats:</th>
+                        <th><input type="number" id="seatno" name="seatno"></th>
+                    </tr>
 
-                <div class="row">
-                    <div class="col-25">
-                        <label for="">How many seats: </label>
-                    </div>
-                    <div class="col-75">
-                        <input type="number" id="seatno" name="seatno" placeholder="Number of seats.">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="">Class</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="class" name="class">
-                            <option value="FirstClass">First</option>
-                            <option value="SecondClass">Second</option>
-                            <option value="ThirdClass">Third</option>
-                        </select>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <input type="submit" value="Submit">
-                </div>
+                    <tr>
+                        <th>Class</th>
+                        <th><select id="class" name="class">
+                                <option value="FirstClass">First</option>
+                                <option value="SecondClass">Second</option>
+                                <option value="ThirdClass">Third</option>
+                            </select></th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2" style="text-align: center;"><button id="ViewBooking"
+                                class="button button2">Search &
+                                Availablity </button></th>
+
+                    </tr>
             </form>
+            </table>
         </div>
     </div>
 
