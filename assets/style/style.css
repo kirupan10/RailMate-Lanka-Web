@@ -183,3 +183,9 @@ td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+video {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  
+  }
