@@ -32,19 +32,19 @@
 
 
 
-    <!-- CONTENT START-->
+    <!-- login-->
     <div class="login-wrap">
         <h2 class="heading-section">Welcome..!</h2><br>
-        <form action="" class="signin-form">
+        <form class="signin-form">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Username" required>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
             </div>
             <div class="form-group">
-                <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                <input id="password" type="password" class="form-control" placeholder="Password" required>
                 <span toggle="#password-field" class="toggle-password"></span>
             </div>
             <div class="form-group">
-                <button id="loginButton" onclick="" class="signin">Login</button>
+                <button id="loginButton" class="signin">Login</button>
             </div>
             <div class="forgot">
                 <a href="ForgotPassword.html">Forgot Password</a>
@@ -55,13 +55,30 @@
             </div>
         </form>
     </div>
+    <script>
+        document.getElementById("loginButton").onclick = function () {
 
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+
+            // (C2) ERROR!
+            if (username != "" && password != "") {
+                location.href = "profile.com";
+            } else {
+                alert("Must fill all the field in this form.!");
+
+            }
+        };
+    </script>
+
+    
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                   <div class="topic">
+                    <div class="topic">
                         <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
                     </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for

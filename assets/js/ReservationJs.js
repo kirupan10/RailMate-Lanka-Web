@@ -15,7 +15,7 @@ var reserve = {
                 errorShow += "Seat number must positive numbers.!<br>";
             }
 
-            if (seatno >= 5) {
+            if (seatno > 5) {
                 errorShow += "Maximum 5 seats...!<br>";
             }
             if (ToWhere == FromWhere) {
