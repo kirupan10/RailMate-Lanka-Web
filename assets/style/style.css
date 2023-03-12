@@ -152,6 +152,11 @@ html {
     background-color: grey;
 }
 
+.button6 {
+    padding: 10px 40px;
+    background-color: blueviolet;
+}
+
 /* Responsive images about*/
 .responsive_image_about {
     width: 100%;
