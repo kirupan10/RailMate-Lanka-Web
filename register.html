@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/style/login.css">
     <link rel="stylesheet" href="assets/style/notify_bar.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
 
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 
@@ -30,19 +32,19 @@
     <!-- signup-form-->
     <div class="login-wrap">
         <h2 class="heading-section">Fill for Register</h2><br>
-        <form action="#" class="signin-form">
+        <form action="" class="signin-form" id="RegisterForm">
             <div class="form-group">
-                <input type="text" class="form-control-signup" placeholder="Username" required>
+                <input type="text" class="form-control-signup" placeholder="Username" id="username">
                 <hr>
-                <input type="password" class="form-control-signup" placeholder="Password" required>
+                <input type="password" class="form-control-signup" placeholder="Password" id="pwd">
                 <hr>
-                <input type="password" class="form-control-signup" placeholder="Conform Password" required>
+                <input type="password" class="form-control-signup" placeholder="Conform Password" id="repwd">
                 <hr>
-                <input type="text" class="form-control-signup" placeholder="First name" required>
+                <input type="text" class="form-control-signup" placeholder="First name" id="fname">
                 <hr>
-                <input type="text" class="form-control-signup" placeholder="Last name" required>
+                <input type="text" class="form-control-signup" placeholder="Last name" id="lname">
                 <hr>
-                <input type="date" class="form-control-signup" placeholder="Date of Birth" required>
+                <input type="date" class="form-control-signup" placeholder="Date of Birth" id="dob">
                 <hr>
                 <select id="gender" name="gender" placeholder="Select gender" class="form-control-signup">
                     <option value="" disabled selected>Select Gender</option>
@@ -52,22 +54,57 @@
                 <hr>
                 <label for="terms" style="color: aliceblue; font-size: medium;"><a href="conditions.html"> I agree to
                         the terms and services:</a></label>
-                <input type="checkbox" id="terms" name="terms" required>
+                <input type="checkbox" id="terms" name="terms" checked>
             </div>
             <div class="form-group">
-                <button id="signupButton" type="submit" class="signin">Signup</button>
+                <button class="button buttonLogin" id="signupButton" type="submit" class="signin">Signup</button>
             </div>
 
         </form>
     </div>
     <br><br>
+    <script>
+        let loginForm = document.getElementById("RegisterForm");
 
+        loginForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let username = document.getElementById("username");
+            let pwd = document.getElementById("pwd");
+            let repwd = document.getElementById("repwd");
+            let fname = document.getElementById("fname");
+
+            let lname = document.getElementById("lname");
+            let dob = document.getElementById("dob");
+
+            let gender = document.getElementById("gender");
+            let terms = document.getElementById("terms");
+
+            if (username.value != "" && pwd.value != "" && repwd.value != ""
+                || fname.value != "" && lname.value != "" && dob.value != "" && gender.value != "" && terms.value != "") {
+                if (pwd.value == repwd.value) {
+                    alert("Successfully creacted an Account\n");
+                    location.href = "profile.html";
+                } else {
+                    alert("Password doesn't match...\n");
+
+                }
+
+            } else {
+                alert("Ensure you input a value in all fields!");
+            }
+
+
+
+        });
+
+    </script>
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                   <div class="topic">
+                    <div class="topic">
                         <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
                     </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for

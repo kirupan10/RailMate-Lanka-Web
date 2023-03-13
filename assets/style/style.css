@@ -162,6 +162,12 @@ html {
     border-radius: 12px;
 }
 
+.buttonLogin {
+    padding: 10px 40px;
+    background-color: goldenrod;
+    border-radius: 12px;
+}
+
 /* Responsive images about*/
 .responsive_image_about {
     width: 100%;
