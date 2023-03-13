@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/style/login.css">
     <link rel="stylesheet" href="assets/style/notify_bar.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
 
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
     
@@ -33,10 +35,10 @@
 
 
 
-    <!-- CONTENT START-->
+    <!-- login-->
     <div class="login-wrap">
         <h2 class="heading-section">Welcome..!</h2><br>
-        <form action="" class="signin-form">
+        <form class="signin-form" onsubmit="LoginFunction()" method="POST" id="loginForm">
             <div class="form-group">
                 <input type="text" id="username" class="form-control" placeholder="Username">
             </div>
@@ -45,8 +47,8 @@
                 <span toggle="#password-field" class="toggle-password"></span>
             </div>
             <div class="form-group">
-                <button id="loginButton" onclick="validateLoginForm()" class="signin">Login</button>
             </div>
+            <button id="loginButton" class="button buttonLogin">Login</button>
             <div class="forgot">
                 <a href="ForgotPassword.html">Forgot Password</a>
                 <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
@@ -56,13 +58,36 @@
             </div>
         </form>
     </div>
+    <script>
+        let loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let username = document.getElementById("username");
+            let password = document.getElementById("password");
+
+            if (username.value == "" || password.value == "") {
+                alert("Ensure you input a value in both fields!");
+            } else {
+                // perform operation with form input
+                //alert("Successfully\n");
+
+                username.value = "";
+                password.value = "";
+                location.href = "profile.html";
+            }
+        });
+
+    </script>
+
 
     <!--footer-->
     <footer>
         <div class="content">
             <div class="left box">
                 <div class="upper">
-                   <div class="topic">
+                    <div class="topic">
                         <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
                     </div>
                     <p>Train booking systems are automated systems that allow customers to securely purchase tickets for

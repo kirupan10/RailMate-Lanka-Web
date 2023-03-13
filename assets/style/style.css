@@ -134,27 +134,38 @@ html {
 
 .button1 {
     padding: 10px 24px;
-    background-color: #4CAF50;
+    background-color: goldenrod;
+    border-radius: 12px;
 }
 
 .button2 {
     padding: 10px 24px;
     background-color: blue;
+    border-radius: 12px;
 }
 
 .button3 {
     padding: 10px 24px;
     background-color: red;
+    border-radius: 12px;
 }
 
 .button4 {
     padding: 10px 40px;
     background-color: grey;
+    border-radius: 12px;
 }
 
 .button6 {
     padding: 10px 40px;
     background-color: blueviolet;
+    border-radius: 12px;
+}
+
+.buttonLogin {
+    padding: 10px 40px;
+    background-color: goldenrod;
+    border-radius: 12px;
 }
 
 /* Responsive images about*/
