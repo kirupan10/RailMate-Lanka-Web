@@ -168,6 +168,12 @@ html {
     border-radius: 12px;
 }
 
+.button8 {
+    padding: 10px 40px;
+    background-color: green;
+    border-radius: 12px;
+}
+
 /* Responsive images about*/
 .responsive_image_about {
     width: 100%;
