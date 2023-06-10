@@ -1,150 +1,155 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailMate - Register</title>
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/notification.css">
     <link rel="stylesheet" href="assets/style.css" />
-    <title>TRS</title>
+    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/notify_bar.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
+
+    <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
+
 </head>
 
-<body>
-    <nav class="navbar">
-        <div class="logo">TRS</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a> </li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
-    <div class="image">
-        <center><img src="assets/Sri_Lanka_Railway_logo.png">
-            <br>
-            <h2>TRS</h2>
-            <p>REGISTER</p>
-        </center>
-        <br>
+<body class="bodystyle">
+    <!-- Notification-Bar-Start-->
+    <div class="notification-top-bar">
+        <p>Already have an account?
+            <small>
+                <a href="login.html">Login</a>
+            </small>
+        </p>
     </div>
-    <center>
-        <div>
-            <table class="table1">
-                <tr>
-                    <td>Title :</td>
-                    <td>First Name :</td>
-                    <td>Last Name :</td>
-
-                </tr>
-                <tr>
-                    <td>
-                        <select name="Title" id="aa">
-                            <option value="Mr.">Mr.</option>
-                            <option value="Mrs.">Mrs.</option>
-                            <option value="Miss.">Miss.</option>
-                            <option value="Rev.">Rev.</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" id="aa" placeholder="Enter First Name" required="" />
-                    </td>
-                    <td>
-                        <input type="text" id="aa" placeholder="Enter Last Name" required="" />
-                    </td>
-
-                </tr>
-                <tr>
-                    <td><br>
-                        Surname:
-                    </td>
-                    <td><br>
-                        NIC :
-                    </td>
-                    <td><br>
-                        Your Mobile No :
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" id="aa" placeholder="Enter Surname" />
-                    </td>
-                    <td>
-                        <input type="text" id="aa" placeholder="Enter NIC" required="">
-                    </td>
-                    <td>
-                        <input type="text" id="aa" placeholder="Enter Mobile No" required="" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <br>Your Username :
-                    </td>
-                    <td>
-                        <br>Password :
-                    </td>
-                    <td>
-                        <br>Confirm Password :
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="email" id="aa" placeholder="Enter Username" required="" />
-                        <p id="as">Your username must be a valid email address</p>
-                    </td>
-                    <td>
-                        <input type="password" id="aa" placeholder="Enter Password" required="" />
-                    </td>
-                    <td>
-                        <input type="password" id="aa" placeholder="Enter confirm Password" required="" />
-                    </td>
-                </tr>
-
-            </table>
-        </div>
-    </center>
-    <center>
-        <ul class="nav-lin a">
-            <div class="menu3">
-                <li><a href="success.html">Register</a></li>
-            </div><br>
-            <hr width="50%">
-            <br>
-            <p>Already have an account?</p><br>
-            <div class="menu4">
-                <li><a href="login.html" color="black">Login</a></li>
+    <!-- Notification-Bar-End-->
+    <br> <br>
+    <!-- signup-form-->
+    <div class="login-wrap">
+        <h2 class="heading-section">Fill for Register</h2><br>
+        <form action="" class="signin-form" id="RegisterForm">
+            <div class="form-group">
+                <input type="text" class="form-control-signup" placeholder="Username" id="username">
+                <hr>
+                <input type="password" class="form-control-signup" placeholder="Password" id="pwd">
+                <hr>
+                <input type="password" class="form-control-signup" placeholder="Conform Password" id="repwd">
+                <hr>
+                <input type="text" class="form-control-signup" placeholder="First name" id="fname">
+                <hr>
+                <input type="text" class="form-control-signup" placeholder="Last name" id="lname">
+                <hr>
+                <input type="date" class="form-control-signup" placeholder="Date of Birth" id="dob">
+                <hr>
+                <select id="gender" name="gender" placeholder="Select gender" class="form-control-signup">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <hr>
+                <label for="terms" style="color: aliceblue; font-size: medium;"><a href="conditions.html"> I agree to
+                        the terms and services:</a></label>
+                <input type="checkbox" id="terms" name="terms" checked>
             </div>
-        </ul>
-    </center>
-    <br>
+            <div class="form-group">
+                <button class="button buttonLogin" id="signupButton" type="submit" class="signin">Signup</button>
+            </div>
+
+        </form>
     </div>
-    <div>
-        <footer class="footer">
-            <br>
-            <p>
-                © 2023 Sri Lanka Railways (SLR). All rights Reserved Sri Lanka Railways
-            </p>
-            <br>
-            <p>Sri Lanka Railways</p>
-            <p>Sri Lanka Railways Headquarters,</p>
-            <p>Colombo 10 , Sri Lanka</p>
-            <p>Telephones : +94 11 4 600 111</p>
+    <br><br>
+    <script>
+        let loginForm = document.getElementById("RegisterForm");
 
-            <ul class="nav-links">
-                <div class="menu2">
+        loginForm.addEventListener("submit", (e) => {
+            e.preventDefault();
 
-                    <li><br><a href="/">FAQ</a></li>
-                    <li><br><a href="privacy.html">Privacy Policy</a></li>
-                    <li><br><a href="/">Train List</a> </li>
-                    <li><br><a href="/">User List</a></li>
+            let username = document.getElementById("username");
+            let pwd = document.getElementById("pwd");
+            let repwd = document.getElementById("repwd");
+            let fname = document.getElementById("fname");
+
+            let lname = document.getElementById("lname");
+            let dob = document.getElementById("dob");
+
+            let gender = document.getElementById("gender");
+            let terms = document.getElementById("terms");
+
+            if (username.value != "" && pwd.value != "" && repwd.value != ""
+                || fname.value != "" && lname.value != "" && dob.value != "" && gender.value != "" && terms.value != "") {
+                if (pwd.value == repwd.value) {
+                    alert("Successfully creacted an Account\n");
+                    location.href = "profile.html";
+                } else {
+                    alert("Password doesn't match...\n");
+
+                }
+
+            } else {
+                alert("Ensure you input a value in all fields!");
+            }
+
+
+
+        });
+
+    </script>
+    <!--footer-->
+    <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
+                    <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
+                        a variety of train services online. </p>
                 </div>
-            </ul>
-        </footer>
-    </div>
+                <div class="lower">
+                    <div class="topic">Need a help ? </div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+94 21 221 1046</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>RailMateLanka@Outlook.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="Reservation.html">Online Train Reservation</a></div>
+                <div><a href="pricing.html">Price Calculation</a></div>
+                <div><a href="conditions.html">Terms & Conditions</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
+                <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &#169; 2023 <a href="index.html">RailMate Lanka</a> All rights reserved</p>
+        </div>
+    </footer>
 </body>
+
+<!--Java-script-files-->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
+<script type="text/javascript" src="assets/js/image_grid.js"> </script>
+<script type="text/javascript" src="assets/js/pricecalc.js"> </script>
+<script type="text/javascript" src="assets/js/counter.js"></script>
+<script type="text/javascript" src="assets/js/onclick.js"></script>
+<script type="text/javascript" src="assets/js/register.js"></script>
 
 </html>

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
     <!-- Title-Image-->
-    <title>TrailMate - Profile</title>
+    <title>TrailMate - Preview</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -46,85 +46,75 @@
         </nav>
     </div>
 
-    <!-- profile-->
+
+    <!-- Booking-Preview-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Welcome back, Mohamed Shukry</h2>
-            <img src="assets/img/avatar.png" alt="Avatar woman">
+            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
+            <h2>RailMate Lanka - View Reservation</h2>
             <br><br>
 
             <table style="width: 80%;" class="center">
                 <tr>
-                    <th>Full Name</th>
-                    <th>Mohamed Shukry</th>
-                    <th style="text-align: center;"><button id="ChangeName" class="button button4">Edit</button></th>
+                    <th>Reservation No</th>
+                    <td>RW00372</td>
                 </tr>
 
                 <tr>
-                    <th>username</th>
-                    <th>MOhamed Shukry</th>
-                    <th style="text-align: center;"></th>
-                </tr>
-
-                <tr>
-                    <th>Mail Address</th>
-                    <th>mhdshukry110@gmail.com</th>
-                    <th style="text-align: center;"></th>
+                    <th>Name</th>
+                    <td>Kirupan Inpathas</td>
                 </tr>
 
                 <tr>
                     <th>Phone Number</th>
-                    <th>0786543033</th>
-                    <th style="text-align: center;"><button id="ChangeNumber" class="button button4">Edit</button></th>
+                    <td>0770221046</td>
                 </tr>
 
                 <tr>
-                    <th>Date of Birth</th>
-                    <th>2001.08.18</th>
-                    <th style="text-align: center;"><button id="ChangeBirth" class="button button4">Edit</button></th>
+                    <th>From</th>
+                    <td>Jaffna</td>
                 </tr>
 
                 <tr>
-                    <th>Gender</th>
-                    <th>Male</th>
-                    <th style="text-align: center;"><button id="ChangeGender" class="button button4">Edit</button></th>
+                    <th>To</th>
+                    <td>Colombo</td>
                 </tr>
 
                 <tr>
-                    <th>Password</th>
-                    <th>*************</th>
-                    <th style="text-align: center;"><button id="ChangePassword" class="button button4">Edit</button>
-                    </th>
+                    <th>No of Seats</th>
+                    <td>4</td>
                 </tr>
 
                 <tr>
-                    <th style="text-align: right;"><button id="ViewBooking" class="button button2"
-                            onclick="ViewBooking()">View My Booking History</button></th>
-                    <th colspan="2" style="text-align: center;"><button id="logout" class="button button3"
-                            onclick="logout()">Logout</button></th>
+                    <th>Class</th>
+                    <td>First</td>
+                </tr>
+
+                <tr>
+                    <th>Date</th>
+                    <td>24.03.2023</td>
+                </tr>
+
+                <tr>
+                    <th>Status</th>
+                    <th>Paid & Completed</th>
+                </tr>
+
+                <tr>
+                    <th colspan="2" style="text-align: center;"><button id="ViewBooking" class="button button1"
+                            onclick="ViewBooking()">Back To Main Page</button></th>
                 </tr>
 
             </table>
         </div>
     </div>
     <script type="text/javascript">
-        document.getElementById("ChangeName").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-        document.getElementById("ChangeNumber").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-        document.getElementById("ChangeBirth").onclick = function () {
-            location.href = "EditProfile.html";
-        };
+        document.getElementById("ViewBooking").onclick = function () {
 
-        document.getElementById("ChangeGender").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-        document.getElementById("ChangePassword").onclick = function () {
-            location.href = "EditProfile.html";
+            location.href = "index.html";
         };
     </script>
+
     <!--footer-->
     <footer>
         <div class="content">
@@ -175,6 +165,5 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
-<script type="text/javascript" src="assets/js/onclick.js"></script>
 
 </html>

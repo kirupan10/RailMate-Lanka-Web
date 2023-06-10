@@ -9,13 +9,13 @@
     <!-- Linking-External-Style_sheets-->
     <link rel="stylesheet" href="assets/style/style.css" />
     <link rel="stylesheet" href="assets/style/notification.css" />
-    <link rel="stylesheet" href="assets/style/slider.css" />
     <link rel="stylesheet" href="assets/style/notify_bar.css">
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+
     <!-- Title-Image-->
-    <title>TrailMate - Profile</title>
+    <title>TrailMate - News</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -46,83 +46,89 @@
         </nav>
     </div>
 
-    <!-- profile-->
+    <!-- Notification-bar-->
+    <div class="notification-top-bar">
+        <p>Already have an account?
+            <small>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </small>
+        </p>
+    </div>
+
+    <!--News-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Welcome back, Mohamed Shukry</h2>
-            <img src="assets/img/avatar.png" alt="Avatar woman">
-            <br><br>
+            <h2>News, Updates</h2>
+            <h4>Stay Informed, Stay Connected!</h4>
+        </div>
+    </div>
 
-            <table style="width: 80%;" class="center">
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image1.jpg">
+                <img src="assets/img/news_image1.jpg" alt="Cinque Terre" width="600" height="300">
+            </a>
+            <div class="desc">Interrupts - Northern </div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image2.jpg">
+                <img src="assets/img/news_image2.jpg" alt="Forest" width="600" height="300">
+            </a>
+            <div class="desc">Break-down</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image3.jpg">
+                <img src="assets/img/news_image3.jpg" alt="Northern Lights" width="600" height="300">
+            </a>
+            <div class="desc">Ella Odyssey</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image4.jpg">
+                <img src="assets/img/news_image4.jpg" alt="Mountains" width="600" height="300">
+            </a>
+            <div class="desc">NightMail Trains</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="ViewNews.html" target="_self" href="assets/img/news_image4.jpg">
+                <img src="assets/img/news_image4.jpg" alt="Mountains" width="600" height="300">
+            </a>
+            <div class="desc">NightMail Trains</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <br>
+    <br>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <table style="width: 100%;" class="center">
                 <tr>
-                    <th>Full Name</th>
-                    <th>Mohamed Shukry</th>
-                    <th style="text-align: center;"><button id="ChangeName" class="button button4">Edit</button></th>
+                    <th style="text-align: center;"><button id="NewsUpdate" class="button button1"
+                            onclick="ViewBooking()">Back To Main Page</button></th>
                 </tr>
 
-                <tr>
-                    <th>username</th>
-                    <th>MOhamed Shukry</th>
-                    <th style="text-align: center;"></th>
-                </tr>
-
-                <tr>
-                    <th>Mail Address</th>
-                    <th>mhdshukry110@gmail.com</th>
-                    <th style="text-align: center;"></th>
-                </tr>
-
-                <tr>
-                    <th>Phone Number</th>
-                    <th>0786543033</th>
-                    <th style="text-align: center;"><button id="ChangeNumber" class="button button4">Edit</button></th>
-                </tr>
-
-                <tr>
-                    <th>Date of Birth</th>
-                    <th>2001.08.18</th>
-                    <th style="text-align: center;"><button id="ChangeBirth" class="button button4">Edit</button></th>
-                </tr>
-
-                <tr>
-                    <th>Gender</th>
-                    <th>Male</th>
-                    <th style="text-align: center;"><button id="ChangeGender" class="button button4">Edit</button></th>
-                </tr>
-
-                <tr>
-                    <th>Password</th>
-                    <th>*************</th>
-                    <th style="text-align: center;"><button id="ChangePassword" class="button button4">Edit</button>
-                    </th>
-                </tr>
-
-                <tr>
-                    <th style="text-align: right;"><button id="ViewBooking" class="button button2"
-                            onclick="ViewBooking()">View My Booking History</button></th>
-                    <th colspan="2" style="text-align: center;"><button id="logout" class="button button3"
-                            onclick="logout()">Logout</button></th>
-                </tr>
 
             </table>
         </div>
     </div>
     <script type="text/javascript">
-        document.getElementById("ChangeName").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-        document.getElementById("ChangeNumber").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-        document.getElementById("ChangeBirth").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-
-        document.getElementById("ChangeGender").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-        document.getElementById("ChangePassword").onclick = function () {
-            location.href = "EditProfile.html";
+        document.getElementById("NewsUpdate").onclick = function () {
+            location.href = "index.html";
         };
     </script>
     <!--footer-->
@@ -175,6 +181,5 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
-<script type="text/javascript" src="assets/js/onclick.js"></script>
 
 </html>

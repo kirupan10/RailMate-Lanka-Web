@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="assets/style/image.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+    <link rel="stylesheet" href="assets/style/pricecalc.css">
     <!-- Title-Image-->
-    <title>TrailMate - Profile</title>
+    <title>TrailMate - Edit Profile</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -49,80 +50,68 @@
     <!-- profile-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Welcome back, Mohamed Shukry</h2>
+            <h2>Update Your Personal Information</h2>
             <img src="assets/img/avatar.png" alt="Avatar woman">
             <br><br>
 
             <table style="width: 80%;" class="center">
                 <tr>
                     <th>Full Name</th>
-                    <th>Mohamed Shukry</th>
-                    <th style="text-align: center;"><button id="ChangeName" class="button button4">Edit</button></th>
+                    <th><input type="text" id="FullName" required></th>
                 </tr>
-
                 <tr>
-                    <th>username</th>
-                    <th>MOhamed Shukry</th>
-                    <th style="text-align: center;"></th>
+                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
                 </tr>
-
-                <tr>
-                    <th>Mail Address</th>
-                    <th>mhdshukry110@gmail.com</th>
-                    <th style="text-align: center;"></th>
-                </tr>
-
                 <tr>
                     <th>Phone Number</th>
-                    <th>0786543033</th>
-                    <th style="text-align: center;"><button id="ChangeNumber" class="button button4">Edit</button></th>
+                    <th><input type="tel" id="phone" required></th>
                 </tr>
-
+                <tr>
+                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
+                </tr>
                 <tr>
                     <th>Date of Birth</th>
-                    <th>2001.08.18</th>
-                    <th style="text-align: center;"><button id="ChangeBirth" class="button button4">Edit</button></th>
+                    <th><input type="date" id="DOB" required></th>
                 </tr>
-
+                <tr>
+                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
+                </tr>
                 <tr>
                     <th>Gender</th>
-                    <th>Male</th>
-                    <th style="text-align: center;"><button id="ChangeGender" class="button button4">Edit</button></th>
+                    <td>
+                        <select name="gender" id="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; color: red;" colspan="2" id="errorShow"></td>
                 </tr>
 
                 <tr>
-                    <th>Password</th>
-                    <th>*************</th>
-                    <th style="text-align: center;"><button id="ChangePassword" class="button button4">Edit</button>
-                    </th>
-                </tr>
-
-                <tr>
-                    <th style="text-align: right;"><button id="ViewBooking" class="button button2"
-                            onclick="ViewBooking()">View My Booking History</button></th>
-                    <th colspan="2" style="text-align: center;"><button id="logout" class="button button3"
-                            onclick="logout()">Logout</button></th>
+                    <th style="text-align: center;"><button id="updateFullname" class="button button2"
+                            onclick="ViewBooking()">Update Profile</button></th>
+                    <th style="text-align: center;"><button id="cancel" class="button button3"
+                            onclick="cancel()">Cancel</button></th>
                 </tr>
 
             </table>
         </div>
     </div>
     <script type="text/javascript">
-        document.getElementById("ChangeName").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-        document.getElementById("ChangeNumber").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-        document.getElementById("ChangeBirth").onclick = function () {
-            location.href = "EditProfile.html";
-        };
+        document.getElementById("updateFullname").onclick = function () {
+            let FullName = document.getElementById("FullName").value;
+            if (FullName != "") {
+                alert("FullName updated...");
+                location.href = "profile.html";
+            } else {
+                document.getElementById("errorShow").innerHTML = "Must fill the name";
+            }
 
-        document.getElementById("ChangeGender").onclick = function () {
-            location.href = "EditProfile.html";
         };
-        document.getElementById("ChangePassword").onclick = function () {
-            location.href = "EditProfile.html";
+        document.getElementById("cancel").onclick = function () {
+            location.href = "profile.html";
         };
     </script>
     <!--footer-->
@@ -175,6 +164,5 @@
 <script type="text/javascript" src="assets/js/image_grid.js"> </script>
 <script type="text/javascript" src="assets/js/pricecalc.js"> </script>
 <script type="text/javascript" src="assets/js/counter.js"></script>
-<script type="text/javascript" src="assets/js/onclick.js"></script>
 
 </html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking-External-Style_sheets-->
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/notification.css" />
+    <link rel="stylesheet" href="assets/style/slider.css" />
+    <link rel="stylesheet" href="assets/style/notify_bar.css">
+    <link rel="stylesheet" href="assets/style/image.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/pricecalc.css">
+    <link rel="stylesheet" href="assets/style/news_img_shadow.css">
+    <link rel="stylesheet" href="assets/style/counter.css">
+    <link rel="stylesheet" href="assets/style/checkout.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Title-Image-->
+    <title>TrailMate - Checkout</title>
+    <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
+</head>
+
+<body>
+    <!-- Notification-bar-Application-->
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Hey!</strong> We are now available on <a href="https://www.apple.com/app-store/">iOS </a> & <a
+            href="https://play.google.com/">Android</a> platforms.
+    </div>
+
+    <!-- Menu-bar -->
+    <div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka</a>
+            </div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="Reservation.html">Reservation</a> </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <!--checkout-->
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form name="myForm" onsubmit="return checkoutValidation()" method="post"></form>
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="john@example.com">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="New York">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="NY">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="10001">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <button id="checkout" class="button button8" type="submit" value="">Continue to checkout </button>
+                <button id="viewCart" class="button button2">Search &
+                    Availablity </button>
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>
+                    Details
+                </h4>
+                <p>R.No: RW00372</p>
+                <p>Train: Yazl Devi</p>
+                <p>Seats: 4</p>
+                <p>Class: First Class</p>
+                <p>From Jaffna </p>
+                <p>To Colombo</p>
+                <hr>
+                <p>Do you want edit <span class="price" style="color:black"><b><a style="color: black;"
+                                href="Reservation.html">Edit</a>
+                        </b></span></p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <script>
+        document.getElementById("checkout").onclick = function () {
+
+            var fname = document.getElementById("fname").value;
+            var email = document.getElementById("email").value;
+            var adr = document.getElementById("adr").value;
+            var city = document.getElementById("city").value;
+
+
+            var state = document.getElementById("state").value;
+            var zip = document.getElementById("zip").value;
+
+            //card
+            var cname = document.getElementById("cname").value;
+            var ccnum = document.getElementById("ccnum").value;
+            var expmonth = document.getElementById("expmonth").value;
+
+            var expyear = document.getElementById("expyear").value;
+            var cvv = document.getElementById("cvv").value;
+
+            let PassValue = 0;
+            let PassValue1 = 0;
+
+
+
+            if (fname != "" && email != "" && adr != "" && city != "" && state != "" && zip != "") {
+
+                PassValue = 1;
+
+            } else {
+                alert("Must fill Billing address.");
+                PassValue = 0;
+            }
+            if (cname != "" && ccnum != "" && expmonth != "") {
+
+                PassValue1 = 1;
+
+            }
+            else {
+                alert("Must fill Credit card details.");
+                PassValue1 = 0;
+            }
+
+            if (PassValue == 1 && PassValue1 == 1) {
+                location.href = "ViewReservation.html";
+            }
+
+
+            //location.href = "profile.html";
+        };
+
+        document.getElementById("viewCart").onclick = function () {
+            location.href = "Reservation.html"
+        };
+
+    </script>
+    <!--footer-->
+    <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
+                    <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
+                        a variety of train services online. </p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Need a help ? </div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+94 21 221 1046</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>RailMateLanka@Outlook.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="Reservation.html">Online Train Reservation</a></div>
+                <div><a href="pricing.html">Price Calculation</a></div>
+                <div><a href="conditions.html">Terms & Conditions</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
+                <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &#169; 2023 <a href="index.html">RailMate Lanka</a> All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+<!--Java-script-files-->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
+<script type="text/javascript" src="assets/js/image_grid.js"> </script>
+<script type="text/javascript" src="assets/js/pricecalc.js"> </script>
+<script type="text/javascript" src="assets/js/counter.js"></script>
+
+
+</html>

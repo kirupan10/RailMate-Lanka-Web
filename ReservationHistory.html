@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/news_img_shadow.css">
     <!-- Title-Image-->
-    <title>TrailMate - Profile</title>
+    <title>TrailMate - History</title>
     <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
 </head>
 
@@ -46,83 +46,87 @@
         </nav>
     </div>
 
-    <!-- profile-->
+
+
+    <!-- Booking-history-->
     <div class="header" id="myHeader">
         <div class="image-gallery">
-            <h2>Welcome back, Mohamed Shukry</h2>
-            <img src="assets/img/avatar.png" alt="Avatar woman">
-            <br><br>
-
-            <table style="width: 80%;" class="center">
+            <img src="assets/img/conditionslogo.png" alt="Nature" width="240" height="240">
+            <h2>RailMate Lanka - Reservation History</h2>
+            <br>
+            <table style="width: 100%;" class="center">
                 <tr>
-                    <th>Full Name</th>
-                    <th>Mohamed Shukry</th>
-                    <th style="text-align: center;"><button id="ChangeName" class="button button4">Edit</button></th>
+                    <th>Reservation No</th>
+                    <th>Name</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>No of Seats</th>
+                    <th>Class</th>
+                    <th></th>
                 </tr>
 
                 <tr>
-                    <th>username</th>
-                    <th>MOhamed Shukry</th>
-                    <th style="text-align: center;"></th>
-                </tr>
-
-                <tr>
-                    <th>Mail Address</th>
-                    <th>mhdshukry110@gmail.com</th>
-                    <th style="text-align: center;"></th>
-                </tr>
-
-                <tr>
-                    <th>Phone Number</th>
-                    <th>0786543033</th>
-                    <th style="text-align: center;"><button id="ChangeNumber" class="button button4">Edit</button></th>
-                </tr>
-
-                <tr>
-                    <th>Date of Birth</th>
-                    <th>2001.08.18</th>
-                    <th style="text-align: center;"><button id="ChangeBirth" class="button button4">Edit</button></th>
-                </tr>
-
-                <tr>
-                    <th>Gender</th>
-                    <th>Male</th>
-                    <th style="text-align: center;"><button id="ChangeGender" class="button button4">Edit</button></th>
-                </tr>
-
-                <tr>
-                    <th>Password</th>
-                    <th>*************</th>
-                    <th style="text-align: center;"><button id="ChangePassword" class="button button4">Edit</button>
+                    <td>RW00372</td>
+                    <td>Kirupan Inpathas</td>
+                    <td>Jaffna</td>
+                    <td>Fort,Colombo</td>
+                    <td>4</td>
+                    <td>First</td>
+                    <th style="text-align: center;"><button id="bookingView1" class="button button4">View</button>
                     </th>
                 </tr>
 
                 <tr>
-                    <th style="text-align: right;"><button id="ViewBooking" class="button button2"
-                            onclick="ViewBooking()">View My Booking History</button></th>
-                    <th colspan="2" style="text-align: center;"><button id="logout" class="button button3"
-                            onclick="logout()">Logout</button></th>
+                    <td>RW00258</td>
+                    <td>Kirupan Inpathas</td>
+                    <td>Colombo</td>
+                    <td>Matara</td>
+                    <td>2</td>
+                    <td>Second</td>
+                    <th style="text-align: center;"><button id="bookingView2" class="button button4"
+                            onclick="BookingHistory">View</button></th>
                 </tr>
+
+                <tr>
+                    <td>RW00189</td>
+                    <td>Kirupan Inpathas</td>
+                    <td>Colombo</td>
+                    <td>Vavuniya</td>
+                    <td>1</td>
+                    <td>First</td>
+                    <th style="text-align: center;"><button id="bookingView3" class="button button4">View</button></th>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="header" id="myHeader">
+        <div class="image-gallery">
+            <table style="width: 100%;" class="center">
+                <tr>
+                    <th style="text-align: center;"><button id="Pricing" class="button button1"
+                            onclick="ViewBooking()">Back
+                            To Profile Page</button></th>
+                </tr>
+
 
             </table>
         </div>
     </div>
     <script type="text/javascript">
-        document.getElementById("ChangeName").onclick = function () {
-            location.href = "EditProfile.html";
+        document.getElementById("Pricing").onclick = function () {
+            location.href = "profile.html";
         };
-        document.getElementById("ChangeNumber").onclick = function () {
-            location.href = "EditProfile.html";
+    </script>
+    <script type="text/javascript">
+        document.getElementById("bookingView1").onclick = function () {
+            location.href = "ViewReservation.html";
         };
-        document.getElementById("ChangeBirth").onclick = function () {
-            location.href = "EditProfile.html";
+        document.getElementById("bookingView2").onclick = function () {
+            location.href = "ViewReservation.html";
         };
-
-        document.getElementById("ChangeGender").onclick = function () {
-            location.href = "EditProfile.html";
-        };
-        document.getElementById("ChangePassword").onclick = function () {
-            location.href = "EditProfile.html";
+        document.getElementById("bookingView3").onclick = function () {
+            location.href = "ViewReservation.html";
         };
     </script>
     <!--footer-->

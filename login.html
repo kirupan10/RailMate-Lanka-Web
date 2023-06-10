@@ -1,150 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/STYLESHEET.CSS" />
-
-    <title>Login page</title>
-
-    <style>
-        .login-wrap {
-            width: 100%;
-            margin: auto;
-            max-width: 525px;
-            min-height: 670px;
-            position: relative;
-            background: url() no-repeat center;
-            box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
-
-            width: 100%;
-            height: 100%;
-            padding: 90px 70px 50px 70px;
-            background: rgba(14, 14, 13, 0.548);
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailMate - Login</title>
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/notification.css">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/notify_bar.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 
 
-
-        }
-
-        .heading-section {
-
-            text-align: center;
-            color: hsl(347, 18%, 90%);
-
-
-
-        }
-    </style>
+    <link rel="icon" type="images/x-icon" href="assets/img/logo.png" />
+    
 </head>
 
-<body>
-    <!-- MANUBAR START-->
-    <nav class="navbar">
-        <div class="logo">TRS</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a> </li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
-    <!-- MANUBAR END-->
-
-    <!-- CONTENT START-->
-    <br>
-
-    <body class="bodystyle" style="background-image: url(assets/bgpic.jpg);">
-        <section class="ftco-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center mb-5">
-                        <h1 class="heading-section">Login</h1>
-                    </div>
-                    <br>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="login-wrap">
-                            <h2 align="center">Have an account?</h2>
-                            <form action="#" class="signin-form">
-                                <div class="form-group">
-                                    <br><input type="email" id="aa" placeholder="Username" required="">
-                                </div>
-                                <div class="form-group">
-                                    <br><input id="aa" type="password" placeholder="Password" required>
-                                    <span toggle="#password-field"
-                                        class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                                </div>
-                                <div class="form-group">
-                                    <center><br><button type="submit" class="menu4">Sign In</button></center>
-                                </div>
-                                <br>
-                                <hr width="40%">
-                                <div class="form-group d-md-flex">
-                                    <div class="w-50">
-
-                                        <div class="w-50 text-md-right" align="center">
-                                            <br><a href="#" style="color: #fff">Forgot Password</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <hr width="40%">
-                                <br>
-                                <ul class="nav-lin a"></ul>
-                                <div class="form-group">
-                                    <center>
-                                        <li><a href="register.html" color="black" class="menu5"
-                                                style="color: black;">Create
-                                                Account</a></li>
-                                    </center>
-                                </div>
-                                </ul>
-                            </form>
 
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-    </body>
-    <!-- CONTENT END-->
+<body class="bodystyle">
 
-    <!-- FOOTER START-->
-    <div>
-        <footer class="footer">
-            <br>
-            <p>
-                © 2023 Sri Lanka Railways (SLR). All rights Reserved Sri Lanka Railways
-            </p>
-            <br>
-            <p>Sri Lanka Railways</p>
-            <p>Sri Lanka Railways Headquarters,</p>
-            <p>Colombo 10 , Sri Lanka</p>
-            <p>Telephones : +94 11 4 600 111</p>
-
-            <ul class="nav-links">
-                <div class="menu2">
-
-                    <li><br><a href="/">FAQ</a></li>
-                    <li><br><a href="privacy.html">Privacy Policy</a></li>
-                    <li><br><a href="/">Train List</a> </li>
-                    <li><br><a href="/">User List</a></li>
-                </div>
-            </ul>
-        </footer>
+    <!-- Notification-Bar-Start-->
+    <div class="notification-top-bar">
+        <p>Don't you have an account?
+            <small>
+                <a href="register.html">Register</a>
+            </small>
+        </p>
     </div>
+    <!-- Notification-Bar-End-->
+
+
+
+    <!-- login-->
+    <div class="login-wrap">
+        <h2 class="heading-section">Welcome..!</h2><br>
+        <form class="signin-form" onsubmit="LoginFunction()" method="POST" id="loginForm">
+            <div class="form-group">
+                <input type="text" id="username" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input id="password" type="password" class="form-control" placeholder="Password">
+                <span toggle="#password-field" class="toggle-password"></span>
+            </div>
+            <div class="form-group">
+            </div>
+            <button id="loginButton" class="button buttonLogin">Login</button>
+            <div class="forgot">
+                <a href="ForgotPassword.html">Forgot Password</a>
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/flcinbhn.json" trigger="hover"
+                    style="width:250px;height:250px">
+                </lord-icon>
+            </div>
+        </form>
+    </div>
+    <script>
+        let loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let username = document.getElementById("username");
+            let password = document.getElementById("password");
+
+            if (username.value == "" || password.value == "") {
+                alert("Ensure you input a value in both fields!");
+            } else {
+                // perform operation with form input
+                //alert("Successfully\n");
+
+                username.value = "";
+                password.value = "";
+                location.href = "profile.html";
+            }
+        });
+
+    </script>
+
+
+    <!--footer-->
+    <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""> RailMate Lanka </a>
+                    </div>
+                    <p>Train booking systems are automated systems that allow customers to securely purchase tickets for
+                        a variety of train services online. </p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Need a help ? </div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+94 21 221 1046</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>RailMateLanka@Outlook.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="Reservation.html">Online Train Reservation</a></div>
+                <div><a href="pricing.html">Price Calculation</a></div>
+                <div><a href="conditions.html">Terms & Conditions</a></div>
+                <div><a href="NewsUpdate.html">News & Updates</a></div>
+                <div><a href="faq.html">FAQ</a></div>
+                <div><a href="profile.html">Dashboard</a></div>
+                <div><a href="trains.html">Trains List</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &#169; 2023 <a href="index.html">RailMate Lanka</a> All rights reserved</p>
+        </div>
+    </footer>
 </body>
 
-</html>
-</body>
+<!--Java-script-files-->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
+<script type="text/javascript" src="assets/js/image_grid.js"> </script>
+<script type="text/javascript" src="assets/js/pricecalc.js"> </script>
+<script type="text/javascript" src="assets/js/counter.js"></script>
+<script type="text/javascript" src="assets/js/onclick.js"></script>
+<script type="text/javascript" src="assets/js/login.js"></script>
 
 </html>
