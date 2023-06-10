@@ -1,0 +1,127 @@
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #808080;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+
+    padding: 5px 14px;
+
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.gallery {
+    float: left;
+    width: 25%;
+    height: auto;
+    background: #ccc;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: grey;
+    color: #fff;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+header {
+    background-color: #4c9e9e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#reservation {
+    margin: 100px auto;
+    width: 600px;
+
+}
+
+#reservation li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#reservation li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #c20000;
+}
+
+#reservation li label span {
+    transform: rotate(90deg);
+    font-size: 12px;
+    color: #071407;
+}
+
+#reservation label+input[type="radio"] {
+    display: none;
+}
+
+#reservation .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#reservation label+input[type="radio"]:checked+.content {
+    max-height: 400px;
+}
