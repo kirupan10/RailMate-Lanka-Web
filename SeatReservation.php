@@ -1,6 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
+<?php
+// Database connection information
+$host = "localhost"; // Replace with your MySQL server's hostname
+$username = "root"; // Replace with your MySQL username
+$password = "root"; // Replace with your MySQL password
+$database = "train_reservation_system"; // Replace with the name of your database
+
+// Create a connection to the database
+$mysqli = new mysqli($host, $username, $password, $database);
+
+// Check the connection
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
+
+if (!empty($_POST["FullNameReservation"])) {
+    // Reservation data
+    $fullname = $_POST['FullNameReservation'];
+    $nic = $_POST['PhoneNumberReservation'];
+    $address = $_POST['AddressReservation'];
+    $phone = $_POST['NICReservation'];
+    $seatNumber = rand(0, 16); // Generate a random number
+    $date = "2023-11-04";
+    // Add more reservation fields as needed
+
+    // SQL query to insert reservation data into the database
+    $sql = "INSERT INTO reservations (full_name, nic_number, address, phone_number, seat_number, reservation_date) VALUES (?, ?, ?, ?, ?, ?)";
+
+    // Prepare the statement
+    $stmt = $mysqli->prepare($sql);
+
+    if ($stmt) {
+        // Bind parameters
+        $stmt->bind_param("ssssis", $fullname, $nic, $address, $phone, $seatNumber, $date);
+
+        // Execute the query
+        if ($stmt->execute()) {
+            echo "Reservation successfully added.";
+        } else {
+            echo "Error: " . $stmt->error;
+        }
+
+        // Close the statement
+        $stmt->close();
+    } else {
+        echo "Error: " . $mysqli->error;
+    }
+} else {  
+    echo "Form data is not set.";
+}
+
+// Close the database connection
+$mysqli->close();
+?>
+
+
+
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -66,25 +127,27 @@
             <br>
             <br>
 
+            <form action="" method="post"> 
+
             <table style="width: 80%;" class="center">
                 <tr>
-                    <th>Full Name</th>
-                    <td> <input type="text" id="FullNameReservation" required></td>
+                    <th>Name</th>
+                    <td> <input type="text" name="FullNameReservation" id="FullNameReservation" required></td>
                 </tr>
 
                 <tr>
                     <th>Phone Number</th>
-                    <td> <input type="tel" id="PhoneNumberReservation" required></td>
+                    <td> <input type="tel" name="PhoneNumberReservation" id="PhoneNumberReservation" required></td>
                 </tr>
 
                 <tr>
                     <th>Address</th>
-                    <td><input type="text" id="AddressReservation" required></td>
+                    <td><input type="text" name="AddressReservation" id="AddressReservation" required></td>
                 </tr>
 
                 <tr>
                     <th>NIC Number</th>
-                    <td><input type="text" id="NICReservation" required></td>
+                    <td><input type="text" name="NICReservation" id="NICReservation" required></td>
                 </tr>
 
 
@@ -120,6 +183,8 @@
         <button id="save" onclick="reserve.save()">Reserve Seats</button>
         <br><br>
     </center>
+
+</form>
 
 
     <!--footer-->
